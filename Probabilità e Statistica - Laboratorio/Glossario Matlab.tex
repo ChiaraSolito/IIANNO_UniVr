@@ -1,0 +1,335 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{bbding}
+\usepackage{pifont}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{listings}
+\begin{document}
+
+\title{Formulario Matlab\\Probabilità e Statistica}
+\author{Chiara Solito - Bioinformatica}
+\date{II Semestre - A.A. 2020/2021}
+\maketitle
+\section{Basi}
+\begin{itemize}
+    \item $\%$
+    \subitem Non compila e non esegue il testo (commenti)
+    \item Mostrare qualcosa a display (output)
+    \subitem \texttt{disp()}
+    \item Vettore
+    \subitem \texttt{a1 = [ 2 5 1 ]; $\%$\textit{riga}}
+    \item Grafico a Torta
+    \subitem \texttt{a1 = [ 2; 5; 1 ]; $\%$\textit{colonna}}
+    \item Appendere i vettori
+    \subitem \texttt{u = [r,w]}
+    \item Operatore colonna
+    \subitem Genera vettori spaziati regolarmente
+    \subitem \texttt{u = m:q:n}
+    \item Operatore linspace
+    \subitem Genera vettori riga spaziati linearmente 
+    \subitem \texttt{linspace(x1,x2,n)}
+    \item Matrice
+    \item \texttt{a1 = [ a b c; d e f; g h i]}\\
+    \\
+    $\begin{bmatrix}
+        a & b & c\\
+        d & e & f\\
+        g & h & i
+    \end{bmatrix}$
+    \item Accedere alle matrici
+    \subitem \texttt{A(:,3)} denotes all the elements in the 3rd column of the matrix A
+    \subitem \texttt{A(:,2:5)} denotes all the elements in the 2nd through 5th columns of A
+    \subitem \texttt{A(2:3,1:3)} denotes all the elements in the 2nd and 3rd rows that are also in the 1st through 3rd columns
+    \subitem \texttt{v = A(:)} creates a vector v consisting of all the columns of A stacked from first to last
+    \subitem \texttt{A(end,:)} denotes the last row in A
+    \subitem \texttt{A(:,end)} denotes the last column in A
+    \item Stringa
+    \subitem \texttt{month = 'August'}
+    \item Cella 
+    \subitem \texttt{a = cell(3,3)}
+    \item Struttura
+    \subitem \texttt{student.year = 2; \%come il c}
+\end{itemize}
+
+\section{Funzioni per matrici}
+\begin{itemize}
+    \item Concatenare matrici
+    \subitem \texttt{B = [A A+32; A+48 A+16]}
+    \item Creare matrici dai vettori
+    \subitem \texttt{c = [a b];} o \texttt{c = [a; b];}
+    \item Cancellare righe e colonne
+    \subitem \texttt{X = magic(4)} e \texttt{X(:,3)=[]}
+    \item Creare matrici di zeri
+    \subitem \texttt{C = zeros(2,2)}
+    \item Creare matrici di 1
+    \subitem \texttt{C = ones()}
+    \item Creare matrici di numeri random
+    \subitem \texttt{C = rand()}
+    \item Trovare un elemento diverso da zero
+    \subitem \texttt{[k,j] = find(A)}
+    \item Trova la lunghezza (degli array) o il massimo tra altezza e lunghezza di una matrice
+    \subitem \texttt{length(A)}
+    \item Trova il massimo
+    \subitem \texttt{max(A)}
+    \item Trova il minimo
+    \subitem \texttt{min(A)}
+    \item Trova la taglia
+    \subitem \texttt{size(A)}
+    \item Somma gli elementi di ogni colonna
+    \subitem \texttt{sum(A)}
+\end{itemize}
+
+\section{Operaioni per array e matrici}
+\begin{itemize}
+    \item Addizione
+    \subitem \texttt{+}
+    \item Sottrazione
+    \subitem \texttt{-}
+    \item Moltiplicazione elemento per elemento
+    \subitem \texttt{.*}
+    \item Divisione elemento per elemento
+    \subitem \texttt{./}
+    \item Divisione sinistra elemento per elemento
+    %\subitem \texttt{.\textbackslash}
+    \item Potenza elemento per elemento
+    \subitem \texttt{.\^}
+    \item Trasposta non coniugata di un array
+    \subitem \texttt{.\'}
+\end{itemize}
+
+\section{Grafi e Tavole di Frequenza}
+\begin{itemize}
+    \item Grafico a Bastoncini
+    \subitem \texttt{stem()}
+    \item Grafico a Linee
+    \subitem \texttt{plot()}
+    \item Grafico a Barre
+    \subitem \texttt{bar()}
+    \item Grafico a Barre Orizzontali
+    \subitem \texttt{barh()}
+    \item Grafico a Torta
+    \subitem \texttt{pie()} e \texttt{pie3()}
+    \item Boxplot
+    \subitem \texttt{boxplot()}
+    \item Sublplot?
+    \subitem \texttt{subplot(A)}
+\end{itemize}
+
+\section{Basic Plotting}
+\texttt{x = 0:pi/100:2*pi;\\
+y = sin(x);\\
+plot(x,y)\\
+xlabel('x = 0:2 %\textbackslash pi')\\
+ylabel('sin(x)')\\
+title('Plot of the Sine Function')}
+
+\section{Statistica Descrittiva - Funzioni}
+\begin{itemize}
+    \item Frequenza
+    \subitem \texttt{hist()}
+    \item Tabella delle frequenze
+    \subitem \texttt{tabulate()}
+    \item Media
+    \subitem \texttt{mean() \%= sum(A)/n}
+    \item Mediana
+    \subitem {median() \%50th percentile}
+    \item Moda
+    \subitem \texttt{mode() \%most frequent value}
+    \item Deviazione Standard
+    \subitem \texttt{std()}
+    \item Varianza
+    \subitem \texttt{var()}
+    \item Skewness
+    \subitem \texttt{skewness()}
+    \item Kurtosi
+    \subitem \texttt{kurtosis}
+    \item (\texttt{nanmean() \%Mean, ignoring NaN values})
+    \item Range
+    \subitem \texttt{range()}
+    \item Massimo
+    \subitem \texttt{max()}
+    \item Minimo
+    \subitem \texttt{min()}
+    \item Interquartile range
+    \subitem \texttt{iqr()}
+    \item Percentile del data set
+    \subitem \texttt{prctile()}
+    \item Quantile del data set
+    \subitem \texttt{quantile()}
+    \item Coefficiente di correlazione
+    \subitem \texttt{corrcoef()}
+    \item Grafico di Dispersione per gruppo
+    \subsubitem \texttt{gscatter()}
+    \item Istogramma bivariato
+    \subsubitem \texttt{hist3()}
+    \item Grafico di Dispersione con istogrammi marginali
+    \subsubitem \texttt{scatterhist()}
+\end{itemize}
+
+\section{I Cicli}
+\begin{itemize}
+    \item FOR
+    \subitem \texttt{for loopvar = range}
+    \subsubitem \texttt{action}
+    \subitem \texttt{end}
+\end{itemize}
+
+\section{Elementi di Probabilità}
+\begin{itemize}
+    \item Permutazione
+    \subitem \texttt{perms()}
+    \item Coefficiente Binomiale
+    \subsubitem \texttt{nchoosek()}
+\end{itemize}
+
+\section{Distribuzioni di Probabilità}
+\begin{itemize}
+    \item Funzione di densità di probabilità
+    \subitem \texttt{pdf()}
+    \item Funzione di distribuzione cumulativa
+    \subsubitem \texttt{cdf()}
+    \item Inversa di cdf
+    \subitem \texttt{inv()}
+    \item Generazione di numeri casuali
+    \subsubitem \texttt{rnd()}
+    \item Generazione di numeri casuali uniformemente distribuito sull'intervallo (0,1)
+    \subsubitem \texttt{unifrnd()}
+    \item Media e Varianza
+    \subitem \texttt{stat()}
+    \item Testing di ipotesi
+    \subsubitem \texttt{test()}
+    \item Funzione di errore
+    \subsubitem \texttt{erf()}
+    \item Stima di Massima Verosimiglianza
+    \subitem \texttt{erf()phat = mle(x,’distribution’,’dist’)}
+    \subitem returns the maximum likelihood estimate of the
+    parameters that is assumed to be originated from
+    the specified distribution by ‘dist’.
+    \subitem \texttt{phat = mle(means)}
+    \subitem Distribution of means from repeated random
+    samples of an exponential distribution
+\end{itemize}
+
+\begin{center}
+    \begin{tabular}{c|c|c}
+        \toprule 
+        Distribuzione & PDF & CDF\\
+        \midrule
+        Normale & normpdf() & normcdf()\\
+        Uniforme (cont) & unifpdf() & unifcdf() \\
+        Essponenziale & exppdf() & expcdf()\\
+        Chi-square & chi2pdf() & chi2cdf() \\
+        F & fpdf() & fcdf()\\
+        t & tpdf() & tcdf()\\
+        Binomiale & binopdf() & binocdf()\\
+        Poisson & poisspdf() & poisscdf()\\
+        Ipergeometrica & hygepdf() & hygecdf()\\
+        \bottomrule
+    \end{tabular}   
+\end{center}
+
+\section{Esercizi}
+Costruire un intervallo di confidenza al 95\% per $\mu$, l’intensità effettiva. Determinare, per
+gli stessi dati, un intervallo di confidenza al 99\% per $\mu$.
+\begin{lstlisting}[language=Matlab]
+    data = [17 21 20 18 19 22 20 21 26 29];
+    N = length(data);
+    sigma = 3;
+    alpha1 = 0.05;
+    z1 = norminv(1-alpha1/2);
+    x_bar = mean(data);
+
+    %calcolo del primo intervallo di confidenza
+    ConfidenceInterval95 = [x_bar - z1*sigma/sqrt(N) , x_bar + z1*sigma/sqrt(N)];
+    %[17.44 21.16]
+
+    %calcolo del secondo intervallo di confidenza
+    alpha2 = 0.01;
+    z2 = norminv(1-alpha2/2);
+    ConfidenceInterval99 = [x_bar -z2*sigma/sqrt(N), x_bar + z2*sigma/sqrt(N)];
+    %[16.86 21.74]
+\end{lstlisting}
+
+Si suppone che l'intensità del segnale sia uguale a 20. Verificare se questa ipotesi è plausibile. Usare una significativa del 5\%,
+\begin{lstlisting}[language=Matlab]
+    x_true = 20;
+    [h,p] = ztest(data, x_true, sigma); 
+    % h = 0 lo ztest non rifiuta l'ipotesi nulla 
+    %(H0: mu=20) ad un lvl del 5%
+\end{lstlisting}
+
+Costruire un modello (fit) di tipo lineare che descriva l'andamento degli incassi al botteghino in funzione del numero di weeken
+\begin{lstlisting}[language=Matlab]
+    %linear fit: least squares regression methos
+    b = polyfit(x,y,1);
+\end{lstlisting}
+
+Costruire una prima figura che rappresenti un diagrama a dispersione dei dati
+con sovrapposto il modello di tipo lineare (assegnare correttamente titolo e label alla figura)
+
+\begin{lstlisting}[language=Matlab]
+    %diagramma di dispersone dei dati e visualizzazione del modello lineare
+    figure(1)
+    scatter(x,y); xlabel('weekend'); ylabel('incassi')
+    hold on
+    plot(x, x*b(1)+b(2))
+    title('Diagramma di dispersione dei dati e retta di regressione (modello lineare y = beta_1 x + beta_2'))
+    hold off
+\end{lstlisting}
+
+Determinare se il modello lineare è appropriato a) calcolando e visualizzando in una seconda figura i residui (assegnare correttamente titolo e label),
+b) calcolando il coefficiente di determinazione ($R^2$).
+
+\begin{lstlisting}[language=Matlab]
+    %calcolo dei residui e visualizzazione
+    res = polyval(b,x)-y;
+    figure(2)
+    stem(res)
+    title('Residui')
+    xlabel(1weekend'); ylabel('residui')
+
+    %calcolo del coefficiente di determinazione
+    SSR = sum(res.^2); %residual sum of square
+    SYY = sum((y-mean(y)).^2); %devianza: total sum of squares
+    R2 = 1 -SSR/SYY; %coefficiente di determinazione
+\end{lstlisting}
+
+Calcolare la probabilità che al massimo 3 persone selezionate abbiano un determinato disturbo. P((X $\leq$ 3))
+
+\begin{lstlisting}[language=Matlab]
+    p = 0.2; %probabilita' dello 0.2 che una persona soffra di una malattia
+    n = 25; %seleziono 25 persone
+    cdf3 = binocdf(3,n,p); %P(X<=3)
+\end{lstlisting}
+
+Ottenere i valori della funzione di massa di probabilità (probability mass funztion) per n=6,
+p = 0.3, e successibamente per n = 6, p = 0.7 e visualizzare i risultati nella stessa figura (due subplot) usando la funzione bar. Assegnare correttamente titolo e label a ciascun subplot.
+\textit{Nota: quando chiede la probability mass function lei dà come risposta la binopdf, la pdf binomiale}
+\begin{lstlisting}[language=Matlab]
+    x = 0:1:25;
+
+    n1 = 6;
+    p1 = 0.3;
+    pmf1 = binopdf(x, n1, p1); % pmf binomiale con parametri (n1,p1)
+
+    n2 = 6;
+    p2 = 0.7;
+    pmf2 = binopdf(x, n2, p2); %pmf binomiale con parametri (n2,p2)
+
+    figure(1);
+    subplot(2,1,1);
+    bar(pmf1);
+    title ('pmf binomiale con parametri (n = 6, p = 0.3)')
+    xlabel('x');
+    ylabel('P(X=x)');
+
+    figure(1);
+    subplot(2,1,2);
+    bar(pmf2);
+    title ('pmf binomiale con parametri (n = 6, p = 0.7)')
+    xlabel('x');
+    ylabel('P(X=x)');
+\end{lstlisting}
+\end{document}

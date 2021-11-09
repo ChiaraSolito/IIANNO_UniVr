@@ -1,0 +1,1180 @@
+\documentclass{extarticle}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{pifont}
+\usepackage{titling}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Relazione finale}
+            
+        \vspace{0.5cm}
+        \LARGE
+        Laboratorio di Biologia Molecolare
+            
+        \vspace{1.5cm}
+            
+        \textbf{Chiara Solito}
+
+        \vspace{0.8cm}
+
+            
+        \Large
+        Corso di Laurea in Bioinformatica\\
+        Università degli studi di Verona\\
+        A.A. 2020/21
+            
+    \end{center}
+\end{titlepage}
+\newcommand\tab[1][0.3cm]{\hspace*{#1}}
+
+\newpage
+La presente è la relazione finale per il corso di \textbf{Laboratorio di Biologia Molecolare} del CdS in Bioinformatica (Università degli Studi di Verona) - A.A. 2020/21.
+\tableofcontents
+\newpage 
+\section[MINIPREPARAZIONE DI DNA PLASMIDICO.\\Preparazione di DNA plasmidico tramite lisi alcalina]{MINIPREPARAZIONE DI DNA PLASMIDICO\\ {\large Preparazione di DNA plasmidico tramite lisi alcalina
+(MINIPREP MANIATIS)}}
+\subsection*{Obiettivo} Estrazione di DNA plasmidico da una coltura batterica.
+\subsection*{Introduzione e cenni teorici necessari} I plasmidi sono elementi genetici extracromosomici che si replicano autonomamente in cellule batteriche. Normalmente essi hanno DNA circolare a doppio filamento, superavvolto, anche se esistono dei plasmidi con DNA lineare.\\Nella tecnologia del DNA ricombinante possono essere utilizzati per introdurre frammenti di DNA di nostro interesse in altre cellule, come vettori di clonaggio; per fare ciò vengono usati dei derivati di plasmidi naturali che sono
+stati "ingegnerizzati" in modo da rispondere a ben precisi requisiti. 
+Dopo essere stati ingegnerizzati, hanno bisogno quindi di essere "preparati", dobbiamo isolare il DNA plasmidico e separarlo dal DNA del cromosoma: il metodo di preparazione dei plasmidi da noi usato in laboratorio si basa sulla lisi delle cellule in condizioni alcaline con conseguente denaturazione del DNA, seguita da rapida rinaturazione. Viene sfruttato del DNA plasmidico preparato in piccole quantità da diverse colture di batteri contenenti plasmidi. I batteri sono lisati tramite un trattamento con soluzione contenente sodio dodecil solfato SDS e NaOH. La miscela è neutralizzata con potassio acetato che permette la rinaturazione del DNA plasmidico a differenza di quello genomico, poi rimossso da una centrifugazione. Infine il DNA plasmidico viene concentrato per precipitazione in etanolo.
+\subsection*{Strumenti utilizzati}
+
+\begin{minipage}{0.5\textwidth}
+    \begin{itemize}
+        \item Eppendorf
+        \item Centrifuga
+        \item Micropipetta
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}{0.50\textwidth} 
+    \begin{itemize}
+        \item Vortex
+        \item Cappa sterile
+        \item Coltura batterica cresciuta o/n (over night)
+ \end{itemize}
+\end{minipage}
+
+\subsection*{Soluzioni utilizzate nell'esperimento}
+\begin{itemize}
+    \item Soluzione 1:\\
+    è necessaria per risospendere le cellule e porle nelle condizioni adatte alla successiva lisi. La soluzione è isosmotica grazie alla presenza di glucosio. Contiene anche l'acido etilendiamminotetraacetico (EDTA), come agente chelante che impedisce agli ioni Mg 2+ di agire da coenzimi per DNasi, rendendole inattive, garantendo l'estrazione e la conservazione di DNA integro, in qualsiasi condizione di lavoro. Il pH della soluzione è basico.
+    \item Soluzione 2:\\
+    a base di idrossido di sodio (NaOH). Permette la lisi alcalina con la quale il DNA genomico e plasmidico denaturano e precipitano. L'SDS (sodio dodecilsolfato) è un detergente che in ghiaccio precipita perdendo di efficacia per cui, la soluzione II va mantenuta a temperatura superiore.
+    \item Soluzione 3:\\
+    riporta il lisato cellulare a pH che consente la rinaturazione del DNA plasmidico.
+    \item TE:\\soluzione tampone standard (contenente tris ed EDTA)
+    \item Soluzione fenolo:cloroformio:isoamilico (25:24:1)\\ una soluzione sinergica altamente deproteinizzante che serve per eliminare i possibili contaminanti del DNA per evitare che interferiscano con i successivi trattamenti, specialmente nel caso in cui si lavori con enzimi di restrizione.
+    \item Etanolo (100$\%$ v/v e 70$\%$ v/v).
+\end{itemize}
+\subsection*{Fasi Preliminari}
+\subsubsection*{Prelevare 1.5 ml di coltura batterica cresciuta o/n} L'estrazione del DNA plasmidico deve esser effettuata a partire da colture fresche, in quanto l'utilizzo di colture vecchie potrebbe influenzare negativamente la corretta purificazione del DNA a causa dell'accumulo di metaboliti secondari. La quantità esatta di coltura batterica prelevata non è importante: si tende tuttavia a riempire l'eppendorf per massimizzare la quantità di DNA estratto. Non è indispensabile l'utilizzo di una cappa sterile: l'eventuale presenza di DNasi esogene viene contrastata con l'utilizzo, nelle fasi successive, di EDTA.
+\subsubsection*{Centrifugare per 30 secondi a 12000 rpm e eliminare il supernatante.}L'operazione può essere effettuata a 4°C 0 a temperatura ambiente indipendentemente: una volta si operava con microcentrifughe refrigerate per rallentare il metabolismo cellulare e quindi ridurre l'azione delle nucleasi. Oggi si ritiene superflua questa operazione e si preferisce operare a temperatura ambiente (23-25°C).Il tempo e la velocità della centrifugazione devono essere tali da consentire la formazione di un pellet più o meno compatto (quelli riportati sono valori di centrifugazione indicativi: se il pellet e instabile procedere con un'ulteriore centrifugazione). Per eliminare il suratante è sufficiente versare il contenuto del tubo capovolgendolo e picchiettarlo leggermente, con tappo aperto, su carta cercando di allontanare le eventuali goccioline di terreno residue, tale operazione consente di non modificare le concentrazioni delle tre soluzioni in seguito utilizzate.
+\subsection*{Procedimento}
+\begin{enumerate}
+    \item \textbf{Risospendere il pellet batterico in 100 $\mu$L  di Soluzione I.}\\Per la risospensione si può utilizzare il vortex o il puntale di una pipetta, in quanto le cellule sono ancora integre ed il DNA è protetto.
+    \item \textbf{Aggiungere 200  $\mu$L  di Soluzione II.}\\ Mescolare capovolgendo il tubo due o tre volte. In questa fase la soluzione alcalina provoca la lisi delle cellule e la denaturazione e precipitazione delle molecole di DNA genomico e plasmidico. Quindi, le molecole di DNA diventano estremamente fragili, per questo si deve mescolare adeguatamente ma evitando azioni troppo energiche (vortex) per non rompere meccanicamente il DNA stesso. Si ottiene un lisato cellulare viscoso e biancastro.
+    \item \textbf{Aggiungere 150 ml di soluzione III entro 2-3 minuti dall'aggiunta della Soluzione II e mescolare capovolgendo il tubo due o tre volte}\\Anche in questo caso non vortexare per non di rompere il DNA. Con l'aggiunta della soluzione III si riporta il lisato cellulare a pH che consentono la riabirazione del DNA plasmidico. Il tempo di attesa che precede l'aggiunta della soluzione è fondamentale per la separazione del DNA plasmidico dal genomico: il DNA plasmidico, proprio perché superavvolto e di piccole dimensioni, se mantenuto in condizioni di lisi per un tempo non superiore ai 3-4 minuti riesce a rinaturare, mentre il DNA genomico e le proteine rimangono intrappolate irreversibilmente nel complesso formato da potassio e SDS. Nel caso la soluzione II venisse lasciata agire per periodi più lunghi, il DNA plasmidico sarebbe comunque in grado di rinaturare ma assumerebbe una conformazione tale da risultare inattaccabile dagli enzimi di restrizione.
+    \item \textbf{Centrifugare a massima velocità per 5 min. e recuperare il supernatante in un nuovo tubo}\\Questo tempo deve essere rispettato per permettere la sedimentazione dei residui cellulari. Si consiglia di prelevare una quantità di surnatante non superiore a 300l in vista dall'aggiunta di un volume doppio di etanolo nelle fasi successive.
+    \item \textbf{Trattamento con fenolo-cloroformia per eliminare le proteine rimanenti.}\\\textit{Nota: il trattamento è opzionale ma in questa esperienza si è scelto di utilizzarlo.}
+    \subitem{5.1} \textbf{Aggiungere alla soluzione contenenente il DNA 1 vol. di fenolo:cloroformio:isoamolico (25:24:1)}\\La presenza dell'isoamilico serve per semisaturare il cloroformio che altrimenti puro avrebbe la tendenza a disidratare il campione.
+    \subitem{5.2} \textbf{Miscelare le due fasi (\underline{non vortexare})}\\Agitare vigorossamente fintanto cche il campione non si presenta lattiginoso.
+    \subitem{5.3} \textbf{Centrifugare almeno 3 minuti}\\Si formano due fasi distinte: quella inferiore di fenolo-cloroformio e quella superiore con il DNA in soluzione. L'interfaccia bianca è data dalle proteine denaturate.
+    \subitem{5.4} \textbf{Recuperare la fase superiore, contenente DNA}\\Importante è evitare di creare vortici che smuovano lo strato inferiore ed evitare di trasportare nel nuovo tubo tracce di fenolo-cloroformio (visibili in controluce come "sferette" vetrose), perché queste degraderebbero gli enzimi utilizzati in seguito.
+    \item \textbf{Precipitare il DNA con due vol. di etanolo (100$\%$ v/v) oppure con 0.6 vol. di isopropanolo.}\\ L'etanolo è aggiunto al 100$\%$ per ottenere una soluzione finale al 70$\%$. Per esempio a 100  $\mu$L  di DNA si aggiungono 200  $\mu$L  di etanolo assoluto oppure 60 ml di isopropanolo. In questa fase è necessario capovolgere il tubo delicatamente: il DNA deve venire a contatto con l'alcol per precipitare.
+    \item \textbf{Centrifugare a 12000 rpm per 5 min.}\\Se il DNA è sporco è possibile vedere il pellet bianco sul fondo del tubo. Se è presente una grande quantità di polisaccaridi il pellet è mucillaginoso.
+    \item \textbf{Rimuovere il supernatante e lavare con etanolo 70$\%$ v/v.}\\Per eliminare l'etanolo capovolgere la provetta aperta e scuoterla leggermente su un pezzo di carta, oppure effettuare un breve passaggio in centrifuga (30 secondi a massima velocita) per far scendere eventuali goccioline sul fondo del tubo e quindi aspirarle con una micropipetta. Il lavaggio con EtOH 70$\%$ serve a eliminare i sali rimasti. Versare nel tubo circa 500  $\mu$L  di EtOH 70$\%$.
+    \item \textbf{Rimuovere completamente l'etanolo e lasciare seccare all'aria per 10 minuti.}\\ Per eliminare l'etanolo aspirarlo con una micropipetta senza rompere il pellet, eventualmente ripetere una breve centrifugazione come spiegato al punto 3. É importante che il pellet sia completamente asciutto perché la presenza di tracce di etanolo determina una scarsa risospensione del DNA, soprattutto, ne provoca la fuoriuscita dal pozzetto quando si effettua il caricamento su gel di agarosio per un'elettroforesi. Questo passaggio può esser velocizzato ponendo la provetta in un luogo ben aerato, per esempio in una cappa a flusso laminare.
+    \item \textbf{Risospendere il DNA plasmidico in 50  $\mu$L  di TE pH 8.0.}\\Si risospende in TE per evitare il pericolo di degradazione del DNA da parte delle DNAsi, infatti, la presenza di EDTA nel TE garantisce protezione dalle DNAsi.
+    \item \textbf{Conservare a 4°C.}\\Se si risospende in acqua si deve conservare a -20°C (la bassa temperatura blocca le DNAsi)
+\end{enumerate}
+\subsection*{Conclusioni} Ho ottenuto DNA purificato. Il grado di purezza del campione ottenuto in questa sede verrà poi verificato in seguito.\\
+Un alternativa a questa esperienza è la purificazione con colonna di silice. Entrambe le modalità sono oggi vendute come kit commerciali (che hanno ressa maggiore e sono più rapidi, ma sono ovviamente più costosi).
+\newpage
+\section{Estrazione dell'RNA totale con TRIZOL}
+\subsection*{Obiettivo} Ottenere dell'RNA purificato. Infatti prima di poter manipolare gli acidi nucleici in qualsiasi modo, è necessario isolarli e purificarli: ovvero ottenere da una sospensione cellulare, una soluzione arricchita dell'acido nucleico di interesse con un grado di purezza che sia il più alto possibile. Nel caso dell'RNA, questo è reso estremamente difficile dall'enorme presenza di RNasi (enzimi che degradano l'RNA) nell'ambiente circostante.
+\subsection*{Introduzione e cenni teorici necessari} Una tipica cellula di mammifero contiene circa 20-30 picogrammi di RNA.\\La popolazione di RNA cellulari è molto eterogenea:
+\begin{itemize}
+    \item [] \textbf{RNA totale:}
+    \item RNA codificante ($~4\%$):\\ Comprende le molecole di mRNA citoplasmatico e i precursori nucleari (hnRNA: heterogeneous nuclear RNA)
+    \item RNA non codificante ($~96\%$)
+        \subitem{-} RNA ribosomiali: 28S, 18S, 5,8S e 5S, con i relativi precursori, che costituiscono fino all'$80\%$ dell'RNA totale
+        \subitem{-} tRNA e altri piccoli RNA a localizzazione nucleare, nucleolare o citoplasmatica (snRNA, snoRNA, scRNA)
+\end{itemize}
+L'RNA normalmente è costituito da un filamento singolo $\rightarrow$ molto meno stabile del DNA, si degrada facilmente anche per l'azione degli enzimi ad attività RNAsica rilasciati in seguito alla lisi cellulare.
+La purificazione del RNA viene condotta lavorando sempre a bassa temperatura (4 °C) e con soluzioni trattate con DEPC (dietilpirocarbonato, vedi sotto). Il protocollo comunemente utilizzato prevede la lisi cellulare mediante
+trattamento con detergenti o omogenizzazione meccanica (macinazione in azoto liquido nel caso di materiale vegetale) ed il trattamento con un TRIZOL (approfondito più avanti).
+\subsection*{Strumenti e materiali utilizzati}
+\begin{itemize}
+    \item Pestello e mortaio
+    \item Eppendorf da 2ml
+    \item Centrifuga che mantiene la temperatura
+    \item Vortex
+    \item Spatola da laboratorio
+    \item Pipette a 3 gradazioni diverse
+    \item Foglie di tabacco
+\end{itemize}
+\subsection*{Soluzioni utilizzate nell'esperimento}
+\begin{itemize}
+    \item Azoto liquido:\\
+    utilizzato per riuscire a polverizzare i tessuti da analizzare.
+    \item TRIZOL:\\
+    un composto a base fenolica in grado di inattivare gli enzimi degradativi (RNAsi) e capace di denaturare e far precipitare la maggior parte dei componenti cellulari ed in particolare le proteine ed il DNA. Esso mantiene l'integrità degli acidi nucleici e allo stesso tempo lisa la cellula e ne distrugge i componenti. È costituito da una miscela di guanidina istotiocianato e fenolo. La guanidina istotiocianato è sia un potente inibitore di RNasi e DNasi sia un agente caotropico importante per la denaturazione delle proteine. 
+    \item Fenolo-cloroformio:\\
+    \textit{(come nel precedente esperimento)}\\ una soluzione sinergica altamente deproteinizzante che serve per eliminarei possibili contaminanti dall'RNA per evitare che interferiscano con i successivi trattamenti, specialmente nel caso in cui si lavori con enzimi di restrizione.
+    \item 2-propanolo:\\
+    utilizzato per precipitare l'RNA purificato.
+    \item Acqua DEPC:\\
+    soluzione utilizzata per risospendere l'RNA. Il Dietilpirocarbonato (DEPC) è un potente inibitore delle RNasi che si può aggiungere alle soluzioni acquose, che si attiva dopo passaggio in autoclave della soluzione con DEPC aggiunto.
+\end{itemize}
+\subsection*{Procedimento}
+\begin{enumerate}
+    \item Triturare le foglie in un mortaio versando azoto liquido fino ad ottenere una polvere.
+    Trasferire circa 100 mg di campione (1-2 spatole) all'interno di 1 Eppendorf da 2 ml.
+    \item Risospendere i tessuti triturati in TRIZOL (1 ml per 50-100 mg di tessuto) e vortexare 10 secondi.
+    \item Lasciare il campione per 5 minuti a temperatura ambiente per assicurare la completa dissociazione dei
+    complessi nucleoproteici.
+    \item Aggiungere 0.2 ml di cloroformio per ml di TRIZOL usati e vortexare vigorosamente per 15 secondi.
+    \item Lasciare 15 minuti a temperatura ambiente.
+    \item Centrifugare a 12000xg per 15 minuti a 4°C. La centrifugazione permette di ottenere tre fasi: una fase
+    organica rossa (contenente le proteine), un'interfase (contenente il DNA genomico precipitato) e una fase
+    acquosa superiore (contenente I'RNA).
+    \item Trasferire la fase acquosa in una nuova provetta a aggiungere 0.5 ml di 2-propanolo per ml di TRIZOL usati
+    e mescolare.
+    \item Lasciare 20 min a -20 °C e successivamente centrifugare a 12000xg per 10 minuti a 4°C. L'RNA precipita
+    formando un pellet nel fondo della provetta.
+    \item Rimuovere il surnatante e lavare il pellet aggiungendo 1 ml di etanolo $70\%$ per ml di TRIZOL usato.
+    \item Vortexare il campione e centrifugare a 12000xg per 5 minuti a 4°C.
+    \item Asciugare il pellet (RNA) per 10 minuti all'aria (non aspettare che l'RNA si asciughi completamente).
+    \item Aggiungere al pellet un volume appropriato (50-100 uL) di acqua DEPC e rispospendere.
+\end{enumerate}
+\subsection*{Conclusioni} Saremo in grado di stabilire la purezza dell'RNA ottenuto in questa esperienza, nella prossima.\\Si può utilizzare l'RNA totale per molte analisi: ad esempio \textit{northern hybridation, RNase protection, dot/slot blotting, sintesi di cDNA, ecc.} Oppure si può effettuare una purificazione per cromatografia e ottenere la frazione Poly($A^+$) per effettuare \textit{mappatura S1, mappatura di RNasi, estensione di primer, costruzione di librerie di cDNA,ecc.}
+Esistono anche in questo caso dei kit commerciali che si basano sull'utilizzo di resine in grado di legare l'RNA e che di solito garantiscono una resa più alta ed un prodotto finale più puro.
+
+\newpage
+\section{Quantificazione dell'RNA totale e del DNA mediante Spettrofotometro nanodrop}
+\subsection*{Obiettivo} La qualità e la quantità del DNA o dell' RNA ottenuto possono essere determinati attraverso diversi metodi analitici. Il metodo che vediamo per quantificare RNA e DNA del plasmide pUC18 è attraverso lo spettrofotometro nanodrop.
+\subsection*{Introduzione e cenni teorici necessari} Lo spettrofotometro nanodrop e è uno spettrofotometro UV-VISIBILE che permette di rilevare l'intero spettro tra 220 e 750 nm. Il sistema consente di leggere il campione sfruttando la tensione superficiale dei liquidi che mantiene il
+campione sotto forma di goccia in sede di lettura. La sorgente luminosa è una lampada allo Xenon; una camera CCD rileva la luce dopo il passaggio attraverso il
+campione. Col NanoDrop è possibile leggere campioni non diluiti consentendo così di ridurre gli errori che vengono commessi operando le diluizioni.
+Il volume di campione necessario per la lettura è piuttosto esiguo (1$\mu$L), pertanto è possibile determinare la concentrazione anche di campioni presenti in quantità ridotta.\\
+Per determinare la purezza del campione si calcola il rapporto tra l'assorbimento a 260 nm (DNA) e a 280 nm (proteine). In una preparazione pura questo rapporto è > di 1.7.
+\subsection*{Strumenti utilizzati}
+\begin{itemize}
+    \item $H_{2}O$ (acqua)
+    \item Carta assorbente
+    \item Spettrofotometro nanodrop
+    \item Campioni di DNA ed RNA preparati precedentemente
+\end{itemize}
+\subsection*{Procedimento}
+\begin{enumerate}
+    \item Depositare una goccia (2 $\mu$L) di acqua sul tip del nanodrop.
+    \item Abbassare delicatamente il braccio e registrare il bianco.
+    \item Sollevare il braccio, asciugare il tip con della carte assorbente.
+    \item Depositare una goccia (2 $\mu$L) di campione sul tip del nanodrop.
+    \item Abbassare delicatamente il braccio e registrare lo spettro.
+    \item Calcolare la quantità di RNA ($ A = 1 \Rightarrow 40 ng / \mu L$) e la sua purezza (rapporto $A_{260} / A _{280}$).
+    \item Congelare l'RNA non diluito ed il plasmide pUC18.
+\end{enumerate}
+\subsection*{Conclusioni} Dalle mie misurazioni:
+\begin{center}
+    \begin{tabular}{cccc}
+    \toprule
+    Campione & Quantità & Purezza ($A_{260} / A _{280}$) & $A_{230} / A _{260}$\\
+    \midrule
+    \textbf{DNA} & 1111.4 & 1.98 & 2.25\\
+    \textbf{RNA} & 401.9& 1.88 & 1.33\\
+    \bottomrule
+    \end{tabular}
+\end{center}
+\textit{Osservazioni:} entrambi i valori sono al di sopra di 1.7 quindi posso considerare la preparazione pura (data dal rapporto $A_{260} / A _{280}$).\\
+Le foto:
+\begin{center}
+\includegraphics[width=0.45\textwidth]{DNA.jpeg}
+\includegraphics[width=0.45\textwidth]{RNA.jpeg}\\
+\emph{Foto da monitor nanodrop}
+\end{center}
+sono i risultati dell'esperimento riportati nella tabella sopra.
+\paragraph{}L'alternativa a questo esperimento da poter replicare in laboratorio era l'analisi con spettrofotometro a cuvetta, di cui ci è stato mostrato solo il macchinario, poiché la quantità di DNA plasmidico non era sufficiente per fare una diluizione e ottenere dei risultati affidabile; abbiamo utilizzato lo spettrofotometro nanodrop che permette di misurare la concentrazione del campione da una goccia di soluzione.
+
+
+\newpage
+\section{Restrizione del DNA}
+\subsection*{Obiettivo} Visualizzare il confronto tra frammenti di DNA ottenuti dalla reazione di digestione del DNA plasmidico con l'utilizzo dell'enzima di restrizione EcoRI e il controllo negativo.
+\subsection*{Introduzione e cenni teorici necessari}
+La funzione di un enzima di restrizione è di "digerire" il DNA plasmidico su punti specifici detti siti di
+restrizione.\\
+Visualizziamo i frammenti tramite l'elettroforesi su gel. L'elettroforesi è costituita da un movimento di cariche in un campo elettrico. É il metodo più comune per separare molecole di DNA, RNA e proteine e trova numerose applicazioni in biologia molecolare. Vengono utilizzati
+due diversi tipi di gel: noi usiamo gel di agarosio. L'agarosio è un polisaccaride che forma un gel con pori
+variabili tra 100 e 300 nm di diametro a seconda della sua concentrazione. É quindi la percentuale di agarosio che
+determina la gamma dei frammenti di DNA, RNA o proteine che vengono separati.
+
+\subsection*{Strumenti e materiali utilizzati}
+\begin{minipage}{0.5\textwidth}
+    \begin{itemize}
+        \item Eppendorf
+        \item Microonde
+        \item Beuta
+        \item Vaschetta elettroforetica
+        \item Pettinino
+        \item Nastro adesivo di carta
+        \item Pipette
+        \item Alimentatore per la corsa elettroforetica
+        \item Plasmide pUC18
+        \item $H_2O$
+        \item Agarosio
+        \item SYBR Safe
+        \subitem È un colorante per DNA che si illumina con un colore verde brillante quando viene eccitata con luce UV.
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}{0.50\textwidth} 
+    \begin{itemize}
+        \item EcoRI
+        \item Buffer 10X
+        \subitem È composto da una soluzione di Tris-borato-EDTA, e l'EDTA sequestra i cationi bivalenti. Il buffer TBE è particolarmente utile nella separazione di piccoli frammenti di DNA (peso molecolare < 1000), ad esempio piccoli prodotti risultanti dalla digestione con enzimi di restrizione.
+        \item TAE 50X
+        \subitem{-} Tris base
+        \subsubitem \textit{Il termine tris base è usato per denominare il composto tris (idrossimetil) amminometano, avente la formula chimica C4H11NO3. È anche conosciuto come THAM. È un composto organico utilizzato come componente nelle soluzioni tampone TAE e buffer TBE.}
+        \subitem{-} Acido Acetico Glaciale
+        \subitem{-} EDTA
+        \subitem{-} Acqua distillata
+    \end{itemize}
+\end{minipage}
+\subsection*{Procedimento}
+\begin{enumerate}
+    \item \textbf{Restrizione del DNA plasmidico}\\ 
+    \item[1.1] Vengono preparati due eppendorf, la prima contenente l'enzima di restrizione e l'altro senza.
+        \begin{enumerate}
+            \item[1.1.1]Eppendorf 1 - campione direazione
+            \begin{itemize}
+                \item Prelievo di 10 $\mu$L di pUC18 (DNA plasmidico)
+                \item Aggiunta di 11.5 $\mu$L di acqua e 2.5 $\mu$L di buffer 10X per facilitare l'azione dell'enzima
+                \item Aggiunta per ultimo di 1$\mu$L di EcoRI (enzima di restrizione)
+            \end{itemize}
+            \item[1.2.1] Eppendorf 2 - controllo negativo
+            \begin{itemize}
+                \item Prelievo di 10 $\mu$L di pUC18 (DNA plasmidico)
+                \item Aggiunta di 12.5 $\mu$Ldi acqua e 2.5 $\mu$L di buffer 10X
+            \end{itemize}
+        \end{enumerate}
+    \item[1.2] \textbf{Le digestioni preparate vengono lasciate per 1 ora circa a 37°C.}
+    \item \textbf{Preparazione TAE 50X (50 ml)}
+    \begin{enumerate}
+        \item[2.1] Pesare 12.2 g di Tris base
+        \item[2.2] Aggiungere 2.8 ml di acido acetico glaciale (sotto la cappa chimica)
+        \item[2.3] Aggiungere 5 ml di EDTA 0.5 M pH 8.0
+        \item[2.4] Portare a volume con acqua distillata
+    \end{enumerate}
+    \subparagraph{Preparazione gel di agarosio 0.8$\%$} 
+    \item Pesare la quantità necessaria di agarosio per un gel allo 0.8$\%$, aggiungere il TAE 1X e portare a volume.\\
+    Per 0.6$g$ agarosio, aggiungere 1.6$ml$ TAE 50X e 78.4$ml$ $H_{2}O$. Il totale deve essere 80$ml$.
+    \item Scaldare nel forno a microonde in una beuta senza fare bollire e mescolare ogni tanto per sciogliere bene l'agarosio. Aspettare qualche minuto e aggiungere 5$\mu$L di SYBR Safe; mescolare e versare nell'apposita vaschetta
+    precedentemente preparata.Aggiungere un pettinino a lato, ed aspettare per circa 30 minuti che il gel si solidifichi.
+    \item Il gel solidificato va posto nella vaschetta di corsa senza il pettinino e coperto con 250 ml di buffer di corsa (TAE 1X).
+    \subparagraph{Campioni da caricare:}
+        \begin{itemize}
+            \item 25$\mu$L pUC18 digerito (+ 5$\mu$L Sample Buffer)
+            \item 25$\mu$L pUC18 non digerito (+ 5$\mu$L Sample Buffer)
+            \item 25$\mu$L RNA totale (+ 5$\mu$L Sample Buffer)
+        \end{itemize}
+    \item Aggiungere poi in un altro pozzetto 5$\mu$L di DNA ladder (marcatore di pesi molecolari).
+    \item Impostare nell'alimentatore il voltaggio per la corsa elettroforetica (90-100 V).
+\end{enumerate}
+\newpage
+\subsection*{Conclusioni}
+\begin{minipage}{0.5\textwidth}
+    \begin{figure}[H]
+        \includegraphics[width=0.50\textwidth]{foto2.jpeg}
+        \includegraphics[width=0.50\textwidth]{foto3.jpeg}
+        \includegraphics[width=0.50\textwidth]{foto4.jpeg}
+    \end{figure}
+    \end{minipage} \hfill
+    \begin{minipage}{0.60\textwidth}
+    \begin{itemize}
+    \item I risultati ottenuti non sono esattamente quelli attesi. Le bande di DNA digerito sono più evidenti (come ci si aspettava), mentre la banda dell'RNA non è ben visibile (segno che probabilmente è avvenuta digestione dell'RNA), com'è possibile vedere in foto.
+    \item Il DNA ladder produce tutte le bande e viene usato come unità di misura per la lunghezza dei frammenti.\\
+    \item Il DNA plasmidico digerito deve produrre una banda spessa\\
+    \item Il DNA non digerito invece produce una banda più sottile\\
+    \item L'RNA ha lunghezza variabile e quindi nella corsa viene suddiviso e crea così una strisciata continua (visibile negli ultimi due pozzetti).
+    \end{itemize}
+\end{minipage}
+\paragraph{}Il gel di agarosio non ha il potere risolutivo per separare molecole di DNA che differiscono soltanto per uno o pochi nucleotidi. Per questo scopo
+vengono invece utilizzati i gel di poliacrilammide i quali riescono a separare frammenti diversi anche di un solo nucleotide
+(range 1-1000 bp) grazie a pori di dimensioni minori rispetto a quelli di agarosio. A differenza di quelli
+dell'agarosio, i legami formati nella poliacrilammide sono irreversibili.
+
+\newpage
+\section{PCR: Polymerase Chain Reaction}
+\subsection*{Obiettivo} Visualizzare il tratto di DNA amplificato tramite PCR.
+\subsection*{Introduzione e cenni teorici necessari} La PCR è una tecnica per replicare ripetutamente (amplificare), in modo molto selettivo, un tratto ben definito di DNA del quale si conoscano le sequenze nucleotidiche iniziali e terminali, 
+partendo da una soluzione dello stesso. In questo modo è possibile isolare e studiare un qualsiasi tratto di DNA a partire da un campione biologico da cui è possibile recuperare tracce di DNA. 
+Come per la replicazione del DNA in un organismo, la PCR richiede un enzima DNA polimerasi che crei nuovi filamenti di DNA, 
+usando fili esistenti come modelli. La DNA polimerasi tipicamente utilizzata nella PCR è chiamata Taq polimerasi, dal nome del batterio dal quale è stata ottenuta (Thermus aquaticus). La stabilità al calore rende la Taq polimerasi ideale per la PCR.
+Gli ingredienti chiave di una reazione PCR sono Taq polimerasi, primer, DNA modello e nucleotidi (blocchi di costruzione del DNA). Gli ingredienti sono assemblati in un tubo, insieme ai cofattori necessari all'enzima, e sono sottoposti a cicli ripetuti di riscaldamento e raffreddamento che consentono di sintetizzare il DNA.
+\subsection*{Strumenti utilizzati}
+\begin{minipage}{0.5\textwidth}
+    \begin{itemize}
+        \item Termociclatore
+        \subitem apparecchio che permette di ottenere i cicli di temperatura necessari per la reazione di PCR. È composto da una piastra riscaldante con alloggiamenti per i campioni in grado garantire rapidi.
+        cambi di temperatura.
+        \item Eppendorf da 250 $\mu$L
+        \item Micropipetta
+        \item Beuta
+        \item Forno a microonde
+        \item Soluzione da amplificare
+        \item Componenti della mix (\textit{a lato $\rightarrow$})
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}{0.50\textwidth}
+    \small
+    \begin{itemize}
+        \item[-] $H_{2}O$ sterile
+        \item[-] buffer TAQ (10X)
+        \item[-] MgCl2 (50 mM)
+        \item[-] Primer FOR
+        \item[-] Primer REV
+        \subitem \textit{Sono dei corti frammenti di DNA, della lunghezza di 18-20 basi, utilizzati per allungare il segmento dato.}
+        \item[-] dNTPs (10 mM)
+        \subitem \textit{La funzione dei dNTP nella PCR è di espandere il filamento di DNA in crescita con l'aiuto della Taq DNA polimerasi.}
+        \item[-] DNA plasmidico contenente l'inserto da amplificare (GPR3), circa 1000 bp.
+        \item[-] TAQ polimerasi
+    \end{itemize}
+\end{minipage}
+\subsection*{Procedimento}
+\begin{enumerate}
+    \item In un eppendorf da 250 $\mu$L preparare la seguente mix:
+    \begin{itemize}
+        \item 12 $\mu$L  $H_{2}O$ sterile
+        \item 2 $\mu$L buffer TAQ (10X)
+        \item 1 $\mu$L MgCl2 (50 mM)
+        \item 1 $\mu$L Primer FOR (25 $\mu$L )
+        \item 1 $\mu$L Primer REV (25 $\mu$L )
+        \item 1 $\mu$L dNTPs (10 mM)
+        \item 1 $\mu$L DNA plasmidico contenente l'inserto da amplificare (GPR3), circa 1000 bp.
+        \item 1 $\mu$L TAQ polimerasi
+        \item[] \rule{50pt}{0.4pt}
+        \item[] totale: 20 $\mu$L 
+    \end{itemize}
+    \item[\textit{Nota:}]Prestare attenzione a non contaminare!
+    \item Vortexare la soluzione. 
+    \item Effettuare il programma della PCR:
+        \begin{center}
+            \begin{tabular}{ccc}
+            \toprule
+            \textbf{Step} & \textbf{Temperature} & \textbf{Tempo}\\
+            \midrule
+            Denaturazione iniziale & 95° & 3 minuti \\
+            Amplificazione (35 cicli) & 95° (denaturazione) & 30 secondi\\
+            Annealing & 55°  & 30 secondi \\
+            Estensioni & 72° & 60 secondi \\
+            Estensione finale & 72° & 5 minuti \\
+            \bottomrule
+            \end{tabular}
+        \end{center}
+    \item Preparazione del gel agarosio 0.8 $\%$ (come nell'esperienza precedente).
+    \item Al campione risultante dalla PCR bisogna aggiungere 4$\mu$L di LB ottenendo 24$\mu$L di soluzione. Diluire la soluzione ("6 per il campione") e ricavarne 20 $\mu$L da inserire nel gel.
+\end{enumerate}
+\subsection*{Conclusioni}
+\begin{minipage}{0.5\textwidth}
+    \begin{figure}[H]
+        \includegraphics[width=0.70\textwidth]{foto1.jpeg}
+    \end{figure}
+    \end{minipage} \hfill
+    \begin{minipage}{0.45\textwidth}
+    Dall'immagine si può concludere che la PCR è
+    avvenuta con successo in quanto è presente una
+    banda che corrisponde alle dimensioni della
+    sequenza target.\\
+    In particolare il contrasto tra le
+    bande fluorescenti e il secondo pozzetto
+    a destra (controllo negativo) rende evidente che è avvenuta PCR.\\
+    Il plasmide pUC18 digerito produce una sola banda corrispondente alla sua lunghezza, il plasmide non digerito invece non produce risultati.
+\end{minipage}
+
+\newpage
+\section{Preparazione di piastre LB-agar e Cellule Competenti}
+\subsection*{Obiettivo} In questa esperienza vogliamo preparare il terreno di coltura complesso utile alla prossima esperienza in cui vedremo la trasformazione delle cellule di E.Coli.
+\subsection*{Introduzione e cenni teorici necessari} Nei laboratori si usano comunemente vari ceppi (strains)
+selezionati e modificati di Escherichia coli (batterio gram negativo non patogeno) che, a seconda del genotipo (con mutazioni su particolari geni o introduzione di geni estranei),
+vengono utilizzati per diversi scopi. Per la crescita delle cellule e per l'espressione di proteine ricombinanti non modificate, si usano terreni di coltura complessi. I mezzi complessi impiegano estratti grezzi di sostanze come la caseina
+(proteina del latte), proteine animali, soia, estratti di lieviti, e altre sostanze altamente nutritive. Queste
+sostanze sono commercialmente disponibili in polvere e possono essere pesate e aggiunte al mezzo di coltura.
+(\textit{A differenza dei mezzi di coltura minimi che hanno già a disposizione gli amminoacidi necessari. senza doverli
+ricavare da altre proteine e che quindi sono utilizzati per compiere delle analisi più
+precise.})\\
+In questa esperienza prepariamo terreno LB(Luria Bertani medium): 1$\%$ triptone, 0.5$\%$ estratto di lievito,
+0.5$\%$ NaCl. (se le cellule contengono un plasmide con una resistenza, si aggiunge l'antibiotico opportuno per la selezione).\\
+Le cellule competenti invece sono cellule, sottoposte a processi chimici/fisici, così che siano in grado di acquisire DNA esogeno dall'ambiente in un processo chiamato trasformazione (verrà spiegato meglio nella prossima esperienza).\\
+Le cellule batteriche di E. Coli vengono sottoposte a un trattamento con buffer specifici contenenti  $CaCl2$ (ma funzionano anche altri sali come $RbCl2$) e assumono la capacità di legare le molecole di plasmide sull'esterno della cellula, questo poi viene internalizzato mediante shock termico. 
+\subsection*{Strumenti e materiali utilizzati}
+\begin{minipage}{0.5\textwidth}
+    \begin{itemize}
+        \item Pipetta
+        \item Centrifuga
+        \item Bilancia di precisione
+        \item Bottiglietta di vetro
+        \item Nastro autoclave
+        \item Autoclave
+        \item Cappa biologica
+        \item Provette Falcon
+        \item Eppendorf
+        \item Piastre di Petri
+        \item Micropipette
+        \item Coltura fresca (cresciuta o/n) di E.coli
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}{0.50\textwidth} 
+    \begin{itemize}
+        \item Trypone
+        \subitem Il triptone è l'assortimento di peptidi formati dalla digestione della caseina mediante la proteasi della tripsina.
+        \item Yeast extract (estratti di lievito)
+        \subitem Gli estratti di lievito sono costituiti dal contenuto cellulare del lievito senza le pareti cellulari. Sono utilizzati come additivi o aromi alimentari o come nutrienti per i terreni di coltura batterica.
+        \item NaCl
+        \item Agar batteriologico
+        \item $H_{2}O$
+        \item E.Coli
+        \item Buffer 1
+        \item Buffer 2
+        \item Azoto liquido
+        \item Ampicillina
+    \end{itemize}
+\end{minipage}
+\paragraph{}
+\underline{\textbf{Composizione buffer 1 e 2:}}\\
+\begin{minipage}{0.5\textwidth}
+    \begin{itemize}
+        \item \textbf{Buffer 1:}\\
+        \begin{itemize}
+            \item RbC1 12 g (0.6 g)
+            \item MnC1*4  $H_{2}O$ 9.9 g1 (0.49 g)
+            \item 1.5 ml di una soluzione di KAC 1 M a pH 7.5
+            \item Cacb*2$H_{2}O$ 1.5 g1 (0.075 g)
+            \item Glicerolo 150 g1 (7.5 g)
+            \item Si porta a pH 5.8 con HAC, si porta a volume (50 ml) con acqua milliQ e si filtra con una membrana con pori di 0.22 um sotto cappa.
+        \end{itemize}
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}{0.50\textwidth} 
+    \begin{itemize}
+        \item \textbf{Buffer 2:}\\
+        \begin{itemize}
+            \item 0.4 ml di una soluzione di MOPS 0.5 M a pH 6.8
+            \item RbC1 1.2 gl (0.025 g)
+            \item Cacb*2  $H_{2}O$ 11 gl (0.22 g)
+            \item Glicerolo 150 gl (3 g)
+            \item Si porta a volume (20 ml) con acqua milliQ e si filtra con una membrana con pori di 0.22 $\mu$m sotto cappa.
+        \end{itemize}
+    \end{itemize}
+\end{minipage}
+\subsection*{Procedimento}
+\begin{minipage}{0.5\textwidth}
+\begin{enumerate}
+    \item \underline{\textbf{Preparazione di terreno LB solido (50 ml)}}\\
+    \subitem{1.1 }Pesare le quantità necessarie a preparare 50 ml di terreno, ovvero: 1\% tryptone (0.5 g), 0.5\% yeast extract (0.25 g) e 0.5\% NaCl (0.25 g). Aggiungere 50 ml di
+    acqua distillata.
+    \subitem{1.2 } Attaccare alla bottiglia un pezzetto di nastro da autoclave.
+    \subitem{1.3 } Sterilizzare in autoclave.
+    \item \underline{\textbf{Preparazione delle cellule competenti}}
+    \subitem{2.1 } \textit{Sotto Cappa:} Prelevare in sterilità 5 ml di una coltura di cellule di E. coli DH5a ad OD 600 di 0.3-0.4 e trasferirli in una provetta Falcon da 50 ml sterile.
+    \subitem{2.2 } Centrifugare 5 minuti a a 3000 rpm a 4°C ed eliminare il surnatante.
+    \subitem{2.3 } Risospendere dolcemente le cellule in 0.8 ml di buffer 1 e trasferire sotto cappa la sospensione in un eppendorfda 2 ml.
+    \subitem{2.4 } Incubare in ghiaccio 15 minuti.
+    \subitem{2.5 } Centrifugare 5 minuti a 3000 rpm a 4°C.
+    \subitem{2.6 } Eliminare sotto cappa il surnat ante e risospendere le cellule in 400  $\mu$L  di buffer2.
+    \subitem{2.7 } Congelare in N2 liquido e conservare a -80°C.
+    \end{enumerate}
+    \subsection*{Conclusioni} Abbiamo ottenuto la piastra come desiderato, il terreno si è solidificato in maniera corretta e sarà possibile utilizarlo successivamente.
+\end{minipage} \hfill
+\begin{minipage}{0.50\textwidth} 
+    \begin{enumerate}
+    \item[3.]\underline{\textbf{Preparazione delle piastre di LB-agar}}
+    \subitem{3.1 } Sciogliere il terreno LB-agar nel micronde (se già solidificato).
+    \subitem{3.2 } \textit{Sotto cappa:} Aspettare che si raffreddi (essendo gli antibiotici sensibili alle alte temperature, ma non che solidifichi) e aggiungere 100 $\mu g/ml$ di ampicillina (50 $\mu$L dello stock 1000X). 
+    \subitem{3.3 } Versare il terreno nelle due piastre.
+    \subitem{3.4 } Lasciarle aperte sotto cappa fino a che l'agar solidifica, chiuderle e conservarle a 4°C.
+    \begin{center}
+        \includegraphics[width=0.80\textwidth]{piastra1.jpeg}\\
+        \emph{La piastra terminata}
+    \end{center}
+\end{enumerate}
+\end{minipage}
+
+\newpage
+\section{Trasformazione di cellule di E.Coli DH5a}
+\subsection*{Obiettivo} L'obiettivo è trasformare un ceppo di E. Coli tramite schock termico, per permettergli di esprimere resistenza all'antibiotico (ampicillina).
+\subsection*{Introduzione e cenni teorici necessari}Gli organismi procariotici possono acquisire materiale genetico estraneo mediante i processi di coniugazione, trasduzione e trasformazione. Nella trasformazione molecole di DNA derivanti da cellule lisate vengono acquisite dai batteri direttamente dall'ambiente esterno. Questi batteri si dicono competenti.\\
+È stato dimostrato in diversi casi che la competenza dipende dalla secrezione all'esterno della cellula di una molecola di natura polipeptidica. Tale molecola, detta fattore di competenza, si accumula all'esterno della cellula fino al raggiungimento di una concentrazione-soglia che induce nella cellula batterica la sintesi di specifici recettori di membrana. Questi legano il DNA e lo trasportano nel citoplasma dove, se esistono regioni di omologia tra il DNA estraneo e quello cellulare, avviene un evento di ricombinazione che determina l'integrazione del DNA estraneo (o di parte di esso) sul cromosoma e la sua eventuale espressione nella cellula ospite. Molte specie batteriche non naturalmente competenti possono essere trasformate artificialmente in laboratorio e rese tali (come abbiamo fatto noi con E.Coli nell'esperienza precedente).\\
+In questa esperienza le cellule del ceppo DH5$\alpha$ del batterio Escherichia coli rese "competenti" per la trasformazione, vengono trasformate con quantità note di DNA plasmidico.\\ La trasformazioni in laboratorio può avvenire con due metodi:
+\begin{itemize}
+    \item Shock termico 
+    \subitem È la tecnica che usiamo in questa esperienza, le cellule incubate in ghiaccio vengono sottoposte ad un bagno termostatico e poi nuovamente raffreddate.
+    \item Elettroporazione
+    \subitem Le cellule, mescolate con il plasmite, sono sottoposte ad una breve ma intensa scarica elettrica, che ne apre i pori di membrana.
+\end{itemize}
+Il plasmide utilizzato conterrà un gene il cui prodotto é un enzima con attività $\beta$-lattamasica che conferisce resistenza all'antibiotico ampicillina. Dopo la trasformazione le cellule verranno piastrate su terreno con l'aggiunta dell'ampicillina ed incubate a 37°C per 12-15 ore. In presenza dell'antibiotico cresceranno solo le cellule trasformate, che contenendo il plasmide esprimono il gene per la resistenza all'ampicillina.
+\subsection*{Strumenti e materiali utilizzati}
+\begin{itemize}
+    \item Miniprep del pUC18
+    \item $H_{2}O$
+    \item 1000 $\mu$L Cellule competenti
+    \item 250 $\mu$L LB liquido
+    \item Piastra di LB-Amp-Xgal-IPTG
+    \item Eppendorf
+    \item Bagno termostatico
+    \item Incubatrice
+    \item Cappa Biologica
+    \item Becco Bunsen
+\end{itemize}
+\subsection*{Procedimento}
+\begin{enumerate}
+    \item Diluire la miniprep del pUC18 ad una concentrazione finale di 100 ng/ $\mu$L in acqua.\\
+    Il calcolo effettuato è stato: $$x*1111.4 = 100*100 \approx 9 $$
+    \item Prelevare sottocappa 1000 $\mu$L di cellule competenti e trasferirli in una eppendorf nuova.
+    \item Aggiungere 1 $\mu$L della miniprep diluita ai 100 $\mu$L di cellule competenti.
+    \item Agitare ed incubare in ghiaccio per 30 minuti.
+    \item Effettuare lo shock termico immergendo il tubo nel bagno termostatico a 42° per 1 minuto.
+    \item Raffreddare velocemente in ghiaccio per 5 minuti.
+    \item Aggiungere 250 $\mu$L di LB liquido ed incubare a 37°C per un'ora (per esprimere la resistenza all'antibiotico).
+    \item Piastrare 150 $\mu$L della sospensione delle cellule su una piastra di LB-Amp-Xgal-IPTG e lasciarla a 37°C overnight.
+\end{enumerate}
+\subsection*{Conclusioni}
+In questa esperienza si ottengono delle colonie che, se cresciute sulla piastra, sono resistenti all'antibiotico.
+\begin{center}
+    \includegraphics[width=0.50\textwidth]{piastra2.jpeg}\\
+    \emph{La piastra con le colonie.}
+\end{center}
+
+\newpage
+\section{Elettroporazione di cellule competenti di E.Coli BL21}
+\subsection*{Obiettivo}
+Trasformare le cellule per esprimere la proteina di interesse (GFP o LHC).
+\subsection*{Introduzione e cenni teorici necessari}
+In questa esperienza cellule di E.coli (BL21) saranno trasformate con un plasmide ingegnerizzato 
+al fine di esprimere una proteina d'interesse. Verranno espresse due diverse proteine: 
+GFP (green fluorescent protein) e LHC-SR3 di \textit{Chlamydomonas reinhardtii} (d'ora in poi LHC). 
+I geni codificanti per queste proteine sono stati precedentemente inseriti in due diversi plasmidi ingegnerizzati 
+al fine di permetterne l'espressione. 
+Il vettore contiene:
+\begin{itemize}
+    \item Ori: l'origine di replicazione
+    \item KanR: per la resistenza alla Kanamicina per la selezione dei trasformati su terreno selettivo
+    \item Rop: gene che codifica per mantenere un numero di copie basso del plasmide.
+        \subitem Mi basta infatti un numero di copie limitato che esprime ad alta efficientza 
+        (Buona produzione in biomassa)
+    \item Lac promotore e lacI: responsabili della repressione dell'operone lac
+    \item T7 promoter e terminator: per la RNA polimerasi 
+    \item Lac operator: sequenza a cui si lega l'operone lac
+    \item GFP o LHCSR3: il gene di interesse - esso porta due His-tsg nel caso di GFP e una sola nel caso LHCSR.
+        \subitem Viene inserito nel mezzo di promotore e terminatore T7.
+\end{itemize}
+Le proteine che esprimeremo sono due proteine diverse: una solubile (da citosol) ovvero GFP, e una idrofobica (di membrana) ovvero LHC.\\
+\begin{itemize}
+    \item[] \Large{\textbf{GFP}}\\
+    \normalsize Proteina intrinsecamente fluorescente (campione giallo) assorbita e riemessa sottoforma di fotoni (non dipene da CROMOFORI $\sim$altre molecole legate ma intrinseca).\\
+    27kDa, 238 aminnoacidi con catene aromatiche che si avvicinano adeguatamente ad assorbire la luce. Si usa come marker/reporter,
+    viene fatta esprimere per verificare quando e dove, ciò è utile (ad esempio) per verificare se un promotore viene espresso o meno, o quando un fattore di trascrizione 
+    interagisce con un promotore.\\
+    È la prima di tante proteine fluorescenti che derivano in parte da essa.
+    \item[] \Large{\textbf{LHC}} \\
+    \normalsize È una delle proteine coinvolte nell'ambito fotosintetico. Sono nello specifico, proteine coinvolte nei sistemi antenna, presenti nei centri di reazione dei fotosistemi.\\
+    In questa esperienza si lavora con LHCSR, proteine di membrana; queste proteine si possono foldare solo ed esclusivamente, con tutti i pigmenti a disposizione.\\
+    In E.Coli non si foldano, a differenza delle GFP, ci aspettiamo quindi espressione con aggregati proteici. Faremo poi in modo di indurre il folding nelle esperienze successive. 
+\end{itemize}
+In condizioni "normali" il prodotto del gene lacI va fisicamente a bloccare la possibilità che la T7 RNA polimerasi 
+trascriva il gene d'interesse. La RNA polimerasi si va a legare fisicamente al promotore e scivola sul filamento di DNA 
+fino al terminatore; questo scivolamento è impedito dalla presenza dell'inibitore. In seguito all'aggiunta di lattosio 
+(o di substrati analoghi come l'IPTG in questo caso), i quali si legano al repressore, il legame al DNA è impedito, 
+permettendo quindi all'RNA polimerasi di scorrere e di trascrivere il gene d'interesse.
+\subsection*{Strumenti utilizzati}
+\begin{minipage}{0.50\textwidth} 
+    \begin{itemize}
+        \item Plasmide (precedentemente isoltato tramite miniprep)
+        \item Cellule competenti BL21;
+        \item LB liquido;
+        \item Elettroporatore
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}{0.50\textwidth} 
+    \begin{itemize}
+        \item LB agar;
+        \item Piastre Petri;
+        \item Antibiotici per la selezione (Kanamicina);
+        \item Falcon, eppendorf e puntali sterili;
+    \end{itemize}
+\end{minipage}
+\subsection*{Procedimento}
+\begin{minipage}{0.50\textwidth} 
+    I primi due punti vanno effettuati sotto cappa:
+    \begin{enumerate}
+        \item Scongelare un'aliquota di cellule competenti in ghiaccio per 15 min.
+        \item Aggiungere 1ul del plasmide ed attendere in ghiaccio 10 min.
+        \item Trasferire inoculo batterico con DNA in cuvetta, attendere poi 10 minuti;
+        \item Elettroporare a 1.5 kV (1 minuto);
+        \item Aggiungere 1 ml di terreno LB liquido (nuovamente sotto cappa);
+            \subitem In questo caso sto fornendo alle cellule ciò che è necessario per riprendersi dopo
+            lo stress subito finora, quindi senza antibiotico (altrimenti le ucciderei)
+        \item Incubare in agitazione a 37°C per 45 min circa.
+        \subitem Le cellule che sono state trasformate esprimeranno l'enzima necessario a conferir loro la 
+        capacità di crescere tollerando la presenza dell'antibiotico nel terreno.\\
+        Nel frattempo, preparare le piastre che serviranno per effettuare la selezione delle cellule trasformate, con terreno LB solido e marker di selezione.\\
+        Noi abbiamo preparato due piastre, una da 200 $\mu$L e l'altra da 500 $\mu$L.
+    \end{enumerate}
+    \subsection*{Conclusioni}
+    A questo punto, solo le cellule che hanno integrato il plasmide e hanno trascritto/tradotto il gene 
+    "kan" saranno in grado di crescere su terreno selettivo. La quantità di colonie sviluppatesi sono minori di quelle attese (con differenze tra le piastre di GFP e quelli di LHC), questo potrebbe essere stato causato da diversi fattori (problemi nella rispresa delle normali capacità cellulari dopo l'elettroporazione, una mancata inoculazione del plasmide o tempi sbagliati nella preparazione).
+\end{minipage} \hfill
+\begin{minipage}{0.50\textwidth} 
+    \begin{enumerate}
+        \item[7.] Sciogliere il terreno LB Agar in microonde;
+        \item[8.] Prelevare con l'aiuto di una falcon sterile 50 ml di terreno;
+        \item[9.] Aggiungere 50ul di antibiotico Kanamicina;
+        \item[10.] Dividere il terreno in due piastre Petri e lasciar polimerizzare;
+        \item[11.] Le cellule vengono quindi piastrate ed incubate ON a 37°C per permettere la formazione di colonie visibili.
+    \end{enumerate}
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{piastraBallottari1.jpeg}\\
+        \emph{La piastra preparata.}
+    \end{center}
+\end{minipage}
+
+\newpage
+\section{Colony PCR}
+\subsection*{Obiettivo}
+Verificare che le colonie siano effettivamente state trasformate.
+\subsection*{Introduzione e cenni teorici necessari}
+La Colony PCR è un metodo che permette di effettuare un'analisi della avvenuta trasformazione di  plasmidi mediante la PCR 
+direttamente sulla colonia senza dover fare una miniprep. Ha una rapida velocità di esecuzione, un basso costo e fa uno screening massivo.\\
+Il metodo si può suddividere in 3 fasi distinte
+\begin{enumerate}
+    \item Disegno dei primer
+    \item Standard PCR
+    \item Elettroforesi su gel
+\end{enumerate}
+\subsection*{Strumenti utilizzati}
+\begin{minipage}{0.50\textwidth}
+    \begin{itemize}
+        \item Eppendorf e micropipette
+        \item Termociclatore
+        \item Piastre in cui sono state piastrate le cellule trasformate
+        \item Piastre di LB Agar vuote
+        \item Apparato per corsa elettroforetica
+        \item Transilluminatore
+        \item Colonie batteriche
+        \item Gel di Agarosio
+        \item Loading dye 6X
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}{0.50\textwidth} 
+    \begin{itemize}
+        \item Buffer-Mg
+        \item $MgCl_{2}$
+        \item Taq polimerasi
+        \item sNTPs
+        \item Primer Forward
+        \item Primer Reverse
+        \item TAE 1x
+        \item EuroSafe
+    \end{itemize}
+\end{minipage}
+In questo caso sono stati utilizzati i primer universali del pET\\
+\begin{center}
+    \textbf{T7:} TAATACGACTCACTATAGGG\\
+    \textbf{T7 rev:} CGTCCCATTCGCCAATCC\\
+\end{center}
+I primer universali si appiano sul plasmide.\\
+Possono succedere due cose:
+\begin{itemize}
+    \item Il plasmide non c'è\\
+    Non accade nulla - le colonie sono resistenti
+    \item Il plasmide c'è\\
+    I due primer si appiano su due porzioni del plasmide: verifico il plasmide e ottengo il transgene.
+\end{itemize}
+\newpage
+La PCR si divide in 3 steps. Vi è una reazione a catena $\rightarrow$ templato $\rightarrow$ ... $\rightarrow$  Amplifichiamo 800 basi in 90 secondi (il calolo del tempo avviene per lunghezza e velocità, 1Kb per 90 secondi)
+\begin{center}
+    \begin{longtable}[c]{ccp{5cm}}
+        \hline
+        \textbf{Step} & \textbf{Temperature} & Cosa succede? \\
+        \hline
+        Denaturazione iniziale & 95° & I filamenti di DNA vengono separati\\
+        Annealing & 50° & I primer si appaiano all'inizio e alla fine della regione da amplificare \\
+        Estensione (noi l'abbiamo allungata a 5 min.) & 72° & La TAQ polimerasi sintetizza il frammento \\
+        \hline
+    \end{longtable}
+\end{center}
+
+\subsection*{Fasi Preliminari}
+\begin{itemize}
+    \item \textbf{FASE 1: Preparazione del templato}\\
+    Preparare quattro mini eppendorf da PCR marcati, contenenti ognuno 20 $\mu$L di acqua sterile 
+        \subitem{ - } Scegliere 4 colonie ben identificabili e abbastanza isolate falle altre. Le colonie devono essere grandi ma non troppo.
+\end{itemize}
+\begin{center}
+    \includegraphics[width=0.40\textwidth]{ColoniaScelta.jpeg}\\
+    \emph{Una delle colonie scelte.}
+\end{center}
+\begin{itemize}
+    \item[]
+        \subitem{ - } Con l'aiuto di un puntale sterile prelevare una colonia e strisciarla su una piastra nuova (non fatto sotto cappa).
+        \subitem{ - } Immergere lo stesso puntale usato in precedenza nell'eppendorf contenente l'acqua 
+\end{itemize}
+\subsection*{Procedimento}
+\begin{itemize}
+    \item{}\textbf{FASE 2: Allestimento della reazione di PCR}\\
+    Allestire la reazione di PCR con i seguenti composti (deve essere sufficiente per 5 campioni, quindi moltiplicare tutto per 5):
+    \begin{itemize}
+        \item 10x buffer-Mg : 2.5 $\mu$L
+        \item 50 nM MgCl2 : 0.8 $\mu$L 
+        \item 10 nM dNTPs : 0.5 $\mu$L 
+        \item 10 nM Primer forward : 1.3 $\mu$L
+        \item 10 nM rimer reverse : 1.3 $\mu$L 
+        \item Templato : 1 $\mu$L
+        \item $H_{2}O$ : to 25 $\mu$L 18 
+        \item Dividere le mix in 4 mini eppendorf (24 $\mu$L per eppendorf)
+        \item Taq : 0.1 $\mu$L per ognuna
+    \end{itemize}
+    I primer sono utilizzati uno nella regione del promotore T7 e l'altro nella regione terminatrice (Ta=55-58°C).\\
+    Le regioni amplificate sono circa 800 bp in entrambi i casi. Vengono allestite 4 reazioni (2 campioni + 1 controllo negativo + 1 controllo positivo), ma viene preparato un mix per 5.\\
+    Per preparare la reazione partiamo dal volume più grande fino a quello piccolo, lasciando però il templato per ultimo.\\
+    Infine incubiamo i campioni a 99°C per 10 minuti. Questo avviene per far sì che le cellule si disgreghino meglio e liberino il DNA (avremmo dovuto farlo alla fine della fase 1, ma lo facciamo qui per risparmiare del tempo).
+    \item{} \textbf{FASE 3: Verifica su gel }
+    \begin{enumerate}
+        \item Pesare la quantità di agarosio necessaria per preparare 50 ml agarosio 1$\%$
+        \item Aggiungere all'agarosio 50 ml di tampone TAE1x 
+        \item Portare ad ebollizione per sciogliere l'agarosio in microonde 
+        \item Aggiungere 6 $\mu$L di EuroSafe 
+        \item Colare nelle vaschette ed attendere la polimerizzazione 
+        \item Aggiungere ai campioni prelevati dal termociclatore il loading Dye 6x (5 $\mu$L) 
+        \item Caricare i campioni su gel 
+        \item Settare un voltaggio di 100V ed attendere la corsa 
+        \item Verificare al transilluminatore la presenza degli amplificati
+    \end{enumerate}
+\end{itemize}
+\subsection*{Conclusioni}
+\begin{minipage}{0.5\textwidth}
+    \begin{figure}[H]
+        \includegraphics[width=0.50\textwidth]{Primo gr.jpg}
+        \includegraphics[width=0.50\textwidth]{Secondo gr.jpg}
+        \includegraphics[width=0.50\textwidth]{Restanti.jpg}
+    \end{figure}
+    \end{minipage} \hfill
+    \begin{minipage}{0.60\textwidth}
+    \begin{itemize}
+        \item Questo tipo di PCR (usando l'acqua in cui si è stemperato come templato) è un approccio impreciso, ma utile in questo caso per verificare velocemente la presenza delle proteine di interesse.\\
+        \item Nel caso specifico abbiamo trovato alcuni campioni in cui le proteine erano presenti e alcuni in cui invece non vi erano.
+    \end{itemize}
+\end{minipage}
+\subsection*{Fase aggiuntiva:}
+Abbiamo identificato le colonie positive: sono sotto il controllo dell'operone lac. Ho quindi un sistema costante di regolazione e cerco di sfruttarlo.
+Faremo in modo di avere quindi delle culture batteriche da queste colonie e indurremo l'espressione della proteina ricombinante.\\
+Le proteine ricombinanti sono ottenute tramite l'espressione in E.coli dei ceppi BL21. Come sappiamo il ceppo BL21 è resistente al cloramfenicolo. 
+L'espressione delle proteine ricombinanti viene indotta nelle colture batteriche ottenute precedentemente tramite l'aggiunta di IPTG, in grado di bloccare il repressore LacI.\\
+\begin{itemize}
+    \item Da una colonia batterica trasformata  e verificata tramite colony PCR (le colonie scelte prima), si ottiene un pre-inoculo di 3-20 ml di coltura satura in LB con antibiotici
+    \item La precoltura satura viene trasferita in circa 300 ml di terreno SB con antibiotici 
+    \item I batteri sono lasciati crescere fino a $OD600nm=0.25/cm$, quindi viene indotta l'espressione mediante l'aggiunta di 1 mM IPTG (isopropiltiogalattoside);
+    \item L'espressione continua per 6 ore (oppure overnight) a 37°C sotto forte agitazione (275 rpm). 
+\end{itemize}
+E.Coli è composta principalmente da acqua, i fotoni vengono scatterati dalla cellula e noi vediamo lo scattering. Abbiamo quindi un valore che dipende dalla densità.\\
+Necessario raggiungere i $0.25OD/cm$ (cammino cuvetta).
+\begin{center}
+    \includegraphics[width=0.40\textwidth]{piastragfp.jpeg}\\
+    \emph{La piastra con le colonie positive}
+\end{center}
+Il trasferimento batterico sulla nuova piastra è ben riuscito e le colonie di GFP (che si erano ben sviluppate nell'esperienza precedente) sono cresciute ben visibilmente.\\
+Alla fine terremo solo il pellet per la prossima esperienza.
+
+\newpage
+\section{Espressione eterologa di proteine e loro purificazione}
+\subsection*{Obiettivo}
+In questa esperienza le proteine d'interesse (GFP e LHC) verranno purificate.
+\subsection*{Introduzione e cenni teorici necessari}
+Nel caso della GFP verrà semplicemente eliminata la parte precipitabile e recuperato il surnatante (giallo fluorescente). Nel caso dell'LHC invece, essendo non foldabile, favoriremo la precipitazone degli aggregati, con una serie di centrifugate sequenziali da cui verrà recuperato il PELLETT, da trattare con detergenti per ottenere la proteina purificata.
+Le proteine così purificate possono poi essere conservate ed utilizzate per altre
+esperienze.
+\subsection*{Strumenti utilizzati}
+\begin{itemize}
+    \item Eppendorf, Pippette e Falcon
+    \item $H_{2}O$
+    \item Coltura di E. Coli precedentemente indotta
+    \item Bilancia
+    \item Falcon 50ml
+    \item Lisozima
+    \item DNAasi
+    \item $MgCl_{2}$
+    \item Centrifuga
+    \item Ghiaccio
+\end{itemize}
+\subsection*{Soluzioni utilizzate nell'esperimento}
+\begin{itemize}
+    \item \textit{Tampone di Lisi:} 50 mM Tris pH 8, 25$\%$ saccarosio, 1 mM EDTA
+    \item \textit{Tampone Detergente:} 200 mM NaCl, 1$\%$ acido deossicolico, 1$\%$ NONIDET P-40, 20 mM Tris pH 7.5, 2 mM EDTA, 10 mM b-mercaptoetanolo
+    \item \textit{Tampone Triton 0.5$\%$:} Triton X-100, 20 mMTris-HCl pH 7.5, 1 mM b-mercaptoetanolo
+    \item \textit{Tampone di Ricostituzione 1x:} 50 mM Hepes pH 8, 12.5$\%$ saccarosio, 2$\%$LDS, 5 mM acido 6-aminocaproico, 1 mM benzamidina
+\end{itemize}
+\begin{minipage}{0.50 \textwidth}
+    \subsection*{Purificazione GFP - Procedimento:}
+    \begin{enumerate}
+        \item 300 ml di coltura batterica  vengono centrifugati a 4350 giri per 5 minuti;
+        \item Il pellet pesato viene risospeso in 0.8 ml/g di Tampone di Lisi con l'aggiunta di 2 mg di lisozima per grammo di cellule e lasciato in ghiaccio per 30 minuti; 
+        \item Si incuba per 30 minuti a temperatura ambiente con 20 $\mu$g/ml DNAsi e 10 mM $MgCl_{2}$;
+        \item Centrifugare per 10 minuti a 12000 giri e recuperare il surnatante. 
+    \end{enumerate}
+\end{minipage} \hfill
+\begin{minipage}{0.50 \textwidth}
+    \begin{center}
+        \includegraphics[width=0.50\textwidth]{eppendorfgfp.jpeg}\\
+        \emph{Purificazione GFP}
+    \end{center}
+\end{minipage}
+\begin{minipage}{0.50 \textwidth}
+\subsection*{Purificazione LHC - Procedimento:}
+    \begin{enumerate}
+        \item 300 ml di coltura batterica  vengono centrifugati a 4350 giri per 5 minuti;
+        \item Il pellet pesato viene risospeso in 0.8 ml/g di Tampone di Lisi con l'aggiunta di 2 mg di lisozima per grammo di cellule e lasciato in ghiaccio per 30 minuti; 
+        \item Si incuba per 30 minuti con 20 $\mu$g/ml DNAsi e 10 mM $MgCl_{2}$;
+        \item Si aggiungono 2 ml per grammo di cellule iniziali di Tampone Detergente e si centrifuga 10 minuti a 12000 giri in modo da precipitare i corpi di inclusione;
+        \item Il pellet viene lavato 3-4 volte con circa 5ml di Tampone Triton, fino a purificare quasi completamente la proteina ricombinante dai contaminanti batterici;
+        \item La proteina presente nei corpi di inclusione viene infine lavata in $H_{2}O$ 
+        \item I corpi di inclusione vengono solubilizzati nel Tampone di Ricostituzione. Al fine di evitare la formazione di schiuma, risospendere il pellet in 200 $\mu$L di acqua e aggiungere 200 $\mu$L di tampone di ricostituzione 2x\\
+        Purtroppo si è dovuto effettuare un po' più di lavaggi e rompere cellule e DNA con l'aiuto di una siringa.
+    \end{enumerate}
+\end{minipage} \hfill
+\begin{minipage}{0.50 \textwidth}
+    \begin{center}
+        \includegraphics[width=0.80\textwidth]{terapiadurto.jpeg}\\
+        \emph{Purificazione con l'aiuto di una siringa}
+    \end{center}
+\end{minipage}
+\subsection*{Conclusioni}
+Nell'esperienza successiva verificheremo l'avvenuta purificazione delle proteine, dal solo campione non è possibile infatti essere certi della purificazione.
+
+
+\newpage
+\section{Elettroforesi SDS-Page denaturante}
+\subsection*{Obiettivo}
+Stabilire il grado di purezza delle proteine che abbiamo precedentemente  purificato.
+\subsection*{Introduzione e cenni teorici necessari}
+L'elettroforesi è una tecnica che consente la separazione su gel di acrilammide di polipepetidi a seconda del peso molecolare, della carica e forma. La tecnica SDS-PAGE consente di separare le proteine unicamente in funzione del loro peso molecolare. I polipeptidi vengono trattati con un agente riducente. come $\beta$-mercaptoetanolo, il detergente anionico SDS (Sodio Dodecil Solfato) e bolliti per 1 minuto. Questo trattamento consente di rompere le strutture proteiche. L'SDS si lega ai polipeptidi con un rapporto costante di 1,4 g per g di proteina, in questo modo il rapporto carica/massa è uguale per tutti polipeptidi caricati su gel. A seguito della rottura delle strutture proteiche i polipeptidi assumono una forma globulare e durante la migrazione su gel di acrilammide vengono separati unicamente in base al peso molecolare.
+Le due soluzioni del gel di separazione (running gel) e del gel di impaccamento (stacking gel) vengono preparate a partire da soluzioni stock dei vari componenti. La funzione dello stacking gel, localizzato sopra il running, è quella di focalizzare i polipeptidi in bande dallo spessore molto ridotto prima del loro ingresso nel gel di separazione. Le due soluzioni sono composte da acrilammide/bisacrilammide in rapporto e concentrazione totale di acrilammide diversi a seconda del tipo di gel utilizzato, e da un tampone a un pH che può essere uguale o diverso tra lo stacking e il running gel. Eventualmente è possibile aggiungere Urea nel running gel per rendere il gel più denaturante.  
+Le soluzioni di acrilammide vengono fatte polimerizzare tramite l'aggiunta di Temed e APS (solfato di ammonio) in due lastre di vetro di 10 x 7.4 cm con uno spaziatore di 1 cm.
+La corsa elettroforetica viene eseguita applicando una differenza di potenziale variabile secondo il tipo di gel utilizzato e le sue dimensioni, per un tempo sufficiente per la migrazione del fronte delle clorofille o del colorante fino al margine inferiore del gel.
+\subsection*{Strumenti utilizzati}
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{itemize}
+        \item Pipette
+        \item Sistema di electroblotting
+        \item Bunsen
+        \item Falcon da 15 ml
+        \item Pettinini e vetri per SDS-PAGE
+        \item i campioni (GFP, LHC)
+        \item Acrilammide
+        \item 1,5 M Tris-HCl pH 8.8
+        \item 0,5 M Tris-HCl pH 6.8
+        \item 0,125 M Tris-HCl pH 6.8
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{itemize}
+        \item $H_{2}O$
+        \item Isopropanolo
+        \item Glicerolo
+        \item Temed
+        \item APS
+        \item Soluzione di colorazione: 0.04$\%$ (w/v) Coomassie Brillant Blue R-250, 50$\%$ metanolo, 10$\%$ acido acetico.
+        \item Soluzione di decolorazione: 7.5$\%$ (v/v) acido acetico, 92.5$\%$ (v/v) $H_{2}O$.
+    \end{itemize}
+\end{minipage}
+\subsection*{Fasi Preliminari}
+\textbf{Preparazione dei gel:}
+Preparare 4 gel, uguali a 2 a 2: 2 saranno colorati (al blu comassie).
+\begin{itemize}
+    \item Stacking gel:
+        \subitem 4$\%$ (W/V) acrilamide 36.5:1 (36.5 acrilamide - 1 bis-acrilamide)
+        \subitem 0. 5 M Tris-HCl pH 6.8
+    \item Running gel:
+        \subitem 12$\%$ (W/V) acrilammide 29.2/0.8 (29.2 acrilammide, 0.8 bis-acrilammide)
+        \subitem 1.5 M Tris-HCl pH 8.8
+\end{itemize}
+\begin{minipage}[c]{0.5\textwidth}
+    La polimerizzazione avviene aggiungendo TEMED (crea il "ponte" tra le molecole) e persolfato di ammonio (APS che induce la polimerizzaione in pochi minuti).\\
+    In una falcon da 15 ml:
+    \begin{center}
+        \begin{tabular}{ccc}
+            \toprule
+            & Running gel & Stacking gel\\
+            \midrule
+            Acrilammide (40 $\%$) & 1.5 ml & 0.5 ml\\
+            1.5 M Tris-HCl pH 8.8 & 1.75 ml & \\
+            0.5 M Tris-HCl pH 6.8 & & 1.25\\
+            $H_{2}O$ & fino a 5 ml & fino a 5 ml\\
+            TEMED & 3.5 $\mu$L & 19 $\mu$L\\
+            10 $\%$ APS & 24 $\mu$L & 60 $\mu$L\\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+\end{minipage} \hfill
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{center}
+        \includegraphics[width=0.60\textwidth]{Running_Stacking.jpeg}\\
+        \emph{Le due falcon con i gel}
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.5\textwidth}
+    \subsection*{Procedimento}
+Dopo aver polimerizzato, si deve procedere molto velocemente all'elettroforesi
+    \begin{itemize}
+        \item \textbf{Preparazione elettroforesi:}
+        \begin{enumerate}
+            \item Colare tra i vetri il Running gel per primo (circa 5 ml)
+            \item Colare 1 ml di Isopropanolo (non si mescola con il gel e rimane in superficie. Serve per permettere
+            al gel di mantenere una superficie piatta e non formare ondine durante la solidificazione)
+            \item Risciacquare accuratamente il fronte del gel per eliminare ogni traccia di isopropanolo
+            \item Posizionare il pettinino all'imboccatura dei vetri (senza farlo entrare completamente)
+            \item Colare lo Stacking gel (polo più di 1 ml). Fare attenzione a non incorporare bolle d'aria
+            \item Spingere il pettinino in sede
+        \end{enumerate}
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{center}
+        \includegraphics[width=0.65\textwidth]{pipettaggio.jpeg}\\
+        \emph{Preparazione dell'elettroforesi}
+    \end{center}
+\end{minipage}
+\begin{itemize}
+    \item \textbf{Preparazione campioni}
+    \begin{enumerate}
+        \setcounter{enumi}{6}
+        \item Diluire il campione in Laemmli Loading Buffer (4$\%$ SDS, 20$\%$  Glicerolo, 10$\%$  2-mercaptoetanolo,
+        0.004$\%$ blu bromofenolo, 0.125 M Tris-HCl pH 6.8) in rapporto 1:300 (1 $\mu$L di corpi d'inclusione in
+        299 di LB)
+        \item Bollire il campione per 30 secondi
+        \item Centrifugare brevemente
+        \item Caricare sul gel 10 $\mu$L di ogni campione
+    \end{enumerate}
+\end{itemize}
+\begin{minipage}[c]{0.5\textwidth}
+    Il caricamento (su gel 6) aveva ordine:
+    \begin{itemize}
+        \item vuoto
+        \item marker
+        \item LHC 10:1
+        \item LHC 5:1
+        \item GFP1 5:1
+        \item LHC 5:1
+        \item GFP 5:1
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{center}
+        \includegraphics[width=0.65\textwidth]{caricamento.jpeg}\\
+        \emph{Caricamento su gel}
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{itemize}
+        \item \textbf{Colorazione al Coomassie}\\
+        \begin{enumerate}
+            \setcounter{enumi}{10}
+            \item Aprire i vetri 
+            \item Tagliare il gel (devo rimuovere il gel di stacking e tenere quello di running - la parte inferiore)
+            \item Immergere il gel nel buffer di trasferimento per 10 minuti
+            \item I gel vengono quindi immersi nella soluzione di colorazione\\
+            Teoricamente ciò avviene per circa 20-90 minuti, in agitazione. In questo caso per velocizzare il processo vengono posti per 1 minuto nel microonde.
+            \item Ne segue la decolorazione, che continua fino a quando le bande proteiche contrasteranno nettamente con il fondo del gel.
+        \end{enumerate}
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{center}
+        \includegraphics[width=0.80\textwidth]{colorazione2.jpeg}\\
+        \emph{Colorazione al Coomassie}
+    \end{center}
+\end{minipage}
+\subsection*{Conclusioni}
+La colorazione è avvenuta e le bande delle diverse proteine sono ben riconoscibili.\\
+
+\newpage
+\section{Western Blotting}
+\subsection*{Obiettivo}
+Identificare le proteine in base alle reazioni con anticorpi specifici
+\subsection*{Introduzione e cenni teorici necessari}
+Il western blotting è una tecnica che consente di trasferire da gel ad un filtro di nitrocellulosa (o altri materiali) polipeptidi che vengono poi fatti reagire con anticorpi specifici che ne consentono il riconoscimento.
+La miscela di proteine generalmente viene prima separata in base alle loro dimensioni (o peso molecolare) utilizzando un gel di poliacrilammide. Successivamente le proteine vengono
+trasferite su di un supporto e poi riconosciute tramite anticorpo specifico.\\
+
+%aggiungere parte su anticorpi primari e secondari
+\subsection*{Strumenti e soluzioni utilizzate}
+\begin{itemize}
+    \item Gel su cui è stata effettuata la corsa elettroforetica
+    \item Sistema Trans-blot turbo Bio-rad
+    \item Carta da filtro Wathman (2 fogli)
+    \item Nitrocellulosa (filtro)
+    \item Tampone di trasferimento: 20mM  Tris, 152mM glicina, 20$\%$ metanolo
+    \item Tampone PBS pH7.2 10X: 1.37 NaCl, 27mM KCl, 15mM KH2PO4, 81mM Na2HPO4
+    \item Soluzione di bloccaggio: Tampone PBS pH 7.2, 0.2$\%$ Tween, 5$\%$ latte scremato in polvere
+    \item Soluzione di sviluppo: 100mM Tris-HCl pH9.5, 100mM NaCl, 5mM MgCl2.\\
+    A 10ml della soluzione di sviluppo vengono aggiunti 66 $\mu$L nitroblu- tetrazolium (NBT) e 33 $\mu$L di 5-bromo-4 cloro-3-indolil fosfato (BCIP)       
+    \item Soluzione di colorazione: 0.2\% Ponceau Red e 3\% acifo tricloroacetico
+\end{itemize}
+\subsection*{Procedimento}
+\begin{enumerate}
+    \item Replicazione del "sandwich" in delle vaschette, che costituiscono un sistema semi-dry. Utilizziamo 2 fogli di carta da filtro Whatman, i fogli di nitrocellulosa.
+    \item Il gel (dalla corsa elettroforetica, toccato il meno possibile) viene inserito nel tampone di trasferimento (non immerso però, così da avere meno elettrolita)
+    \item Si effettua una corsa a 25V, 1A, per 30 minuti.\\
+    Dal basso, e verso il basso, le proteine sono trsferite sul filtro.
+    \item Si incuba il filtro in soluzione di colorazione.\\
+    Al contrario del Coomassie (colorante usato alla fine dell'SDS page) la colorazione avviene in poco tempo. Ora le bande devono essere trattate per fare in modo di poter associare la banda alla rispettiva proteina.
+    \item Si incuba il filtro per 1 ora in agitazione con la soluzione di bloccaggio, questo è una soluzione proteica (a volte a base di albumina, altre di dsa). In questo caso si usa una soluzione a base di latte in polvere. La soluzione fa in modo di saturare tutti i siti della membrana che potrebbero legare altre proteine.
+    \item Si incuba per 2 ore in agitazione a temperatura ambiente con l'anticorpo primario diluito nella soluzione di bloccaggio. Gli anticorpi primari sono immunoglobuline prodotte da altri organismi (topi o conigli di solito). La proteina ricombinante ignerizzata viene iniettata nell'organismo che produce le immunoglobuline. Dall'organismo viene estratto il sangue e dal sangue separato il siero, che viene diluito per 1000 o 2000 volte.
+    \item Nuovamente lavaggio con soluzione di bloccaggio, per rimuovere gli anticorpi non legati (dovrebbero essere tre ma noi ne facciamo solamente uno).
+    \item Si incuba ora con l'anticorpo secondario coniugato con la fosfatasi alcalina.\\ Mentre l'anticorpo primario è specifico per il tag di 6 istidine delle nostre proteine, quello secondario è generico (riconosce e lega altri anticorpi), ma ha un sistema di detection costituito dalla fosfatasi alcalina.
+    \item Si lava ora il filtro 2 volte con la soluzione di bloccaggio per 10 minuti a temperatura ambiente e una volta con tampone PBS a pH 7.2.
+    \item I filtri vengono incubati nella soluzione di sviluppo che contiene il substrato BCIP/NBT. Il substrato viene convertito in situ in un composto blu dalla fosfatasi alcalina immunolocalizzata.\\ 
+    Il BCIP fa da substato e si forma un intermedio idrossile. Questo reagisce con l'NBT formando un sale insolubile e colorato che precipita, indicando la proteina sul filtro.
+    \item Quando la colorazione ha raggiunto un buon contrasto si blocca la reazione con   $H_{2}O$
+\end{enumerate}
+\subsection*{Conclusioni}
+L'esperimento è andato a buon fine per quel che riguarda la GFP, si possono infatti riconoscere sulla carta assorbente le proteine (in figura). L'LHC invece non risulta sul filtro.\\
+Tutti e tre i filtri ottenuti finora (Blue di Comassie, Ponceau Red e filtro finale) sono paragonabili l'uno con l'altro. L'analisi con gli anticorpi specifici è stata di successo soprattutto per quel che riguarda la GFP - si notano infatti le due righe più scure al centro dei filtri.\\
+\begin{center}
+    \includegraphics[width=0.60\textwidth]{westernblot_finito.jpeg}\\
+    \emph{Filtro alla fine del Western Blot}
+\end{center}
+\begin{minipage}{0.50\textwidth}
+    Un procedimento alternativo per il trasferimento, più classico, avrebbe previsto la creazione del cosiddetto sandwich, ovvero una camera di trasferimento, composta come segue:
+    \begin{itemize}
+        \item polo negativo
+        \item spugna porosa
+        \item carta da filtro Whatman
+        \item gel
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}{0.50 \textwidth}
+    \begin{itemize}
+        \item nitrocellulosa
+        \item carta da filtro Whatman
+        \item spugna porosa
+        \item polo positivo
+    \end{itemize}
+    Al metodo della precipitazione di sale invece (più quantitativo) può essere sostituita la chemiluminescenza (metodo più usato), la luminescenza, la fluorescenza, ecc.
+\end{minipage}
+
+
+\newpage
+\section{Ricostituzione in vitro di una proteina di membrana (Folding)}
+\subsection*{Obiettivo}
+Ottenere il ripiegamento della proteina LHC per poter fare una cromatografia di affinità.
+\subsection*{Introduzione e cenni teorici necessari}
+Con il termine folding si intende il processo di ripiegamento di una proteina per
+arrivare alla forma funzionalmente attiva.\\
+La ricostituzione in vitro permette di ottenere proteine ricombinanti ripiegate con la corretta conformazione strutturale (processo di re-folding). Durante la procedura di ricostituzione i pigmenti che le proteine legano in vivo vengono aggiunti alle apoproteine. Questi pigmenti sono necessari al fine di ottenere il corretto ripiegamento. 
+\subsection*{Strumenti utilizzati}
+\begin{itemize}
+    \item 40 $\mu$L di apoproteina (il campione)
+    \item 340 $\mu$g di clorofilla
+    \item Tubo di polipropene
+    \item Vortex
+    \item 100 $\mu$L di etanolo tamponato con $NaCO_{3}$
+    \item $H_{2}O$
+    \item Eppendorf
+    \item 45 $\mu$L di KCl 2ml
+    \item Centrifuga
+    \item Pipette
+\end{itemize}
+\subsection*{Soluzioni utilizzate nell'esperimento}
+\begin{itemize}
+    \item OGP (octil-$\beta$-glucopiranoside)\\
+    detergente per il folding corretto della proteina
+    \item Tampone di Ricostituzione (2$\%$ LDS, 12.5$\%$ saccarosio, 5 mM acido amminocaproico, 1 mM benzamidina, 50 mM Hepes KOH pH 8)
+\end{itemize}
+
+\subsection*{Procedimento}
+\begin{enumerate}
+    \item Il campione è aggiunto a 1.1 ml di Tampone di Ricostituzione in un tubo di polipropilene
+    \item Vengono fatti bollire a 100 °C per 2 min. e lasciati raffreddare per 10 min in bagnetto termostatato a 25°C
+    \item Durante il raffreddamento dell'apoproteina i pigmenti sono risospesi con vortex in 100 $\mu$L di etanolo assoluto tamponato con NaCO3 (il volume di etanolo non deve superare il 7$\%$ del volume finale della reazione, per non ostacolare il folding del complesso proteico)
+    \item La soluzione contenente i pigmenti viene quindi addizionata lentamente alla soluzione di apoproteina sotto blanda agitazione\\
+    I pigmenti vanno tenuti il più possibile al buio, poiché altamente fotosensibili.
+\end{enumerate}
+\begin{minipage}[c]{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.60\textwidth]{vortex.jpeg}
+\end{minipage}%
+\begin{minipage}[c]{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.60\textwidth]{pigmenti.jpeg}
+\end{minipage}
+\begin{center}
+    \emph{Aggiunta dei pigmenti}
+\end{center}
+\begin{enumerate}
+    \setcounter{enumi}{4}
+    \item Il campione è suddiviso in 2 tubi tipo eppendorf da 1.5 ml in aliquote da 600 $\mu$L e mantenuto separato per facilitare le fasi successive
+    \item Si mettono le eppendorf in ghiaccio per 10 minuti.
+    \item Si aggiunge ad ogni campione 60 $\mu$L di octil-$\beta$-D-glucopiranoside (OGP) 10$\%$ (1$\%$ finale)
+    \item Dopo 7 minuti di incubazione in ghiaccio si aggiungono 45 $\mu$L di di KCl 2M (150 mM finale). Il KCl aggiunto causa la precipitazione a freddo dell'LDS (Litio dodecil solfato)
+    \item Dopo 10 minuti di incubazione in ghiaccio i campioni vengono centrifugati per 15 minuti
+    \item Il surnatante viene recuperato e contiene la proteina ricostituita legante pigmenti in modo specifico. 
+\end{enumerate}
+\subsection*{Conclusioni}
+Proveremo a verificare la presenza della proteina ricombinante nella prossima esperienza
+
+\newpage
+\section{Cromatografia di affinità}
+\subsection*{Obiettivo}
+Purificare le proteine ricombinanti.
+\subsection*{Introduzione e cenni teorici necessari}
+La cromatografia di affinità permette di separare le proteine in base alla loro "affinità" per una resina specifica. Proteine con una "coda" di 6 histidine possono essere separate tramite cromatografia di affinità con ioni metallici immobilizzati (IMAC). La proteina di interesse contiene la 6His-tag e si legherà fortemente alla resina IMAC mentre le altre, meno affini, saranno eluite con il fronte o eliminate durante le fasi di lavaggio. La resina utilizzata è del tipo NiNTA (Qiagen) e contiene Ni++ fissato a beads di Sepharose mediante il chelante nitrilotriacetato (NTA). La proteina, contenendo la coda di 6 His, ha una elevata affinità e si complessa saldamente alla resina.
+\subsection*{Strumenti utilizzati}
+\begin{minipage}{0.40 \textwidth}
+    \begin{itemize}
+        \item Colonna per cromatografia: La colonna contiene una resina che lega il Nikel, il quale a sua volta lega le code
+        di istidina della proteina LHC e GFP così che rimangano legate alla resina.
+        \item Detergente OGP
+        \item OG Buffer
+        \item Rinse buffer
+        \item Tris pH 8 con saccarosio 12.5 $\%$
+        \item Imidaziolo 1 M in tris - buffer di eluizione
+        \item Tubo di polipropene
+        \item Eppendorf
+    \end{itemize}
+\end{minipage} \hfill
+\begin{minipage}{0.50 \textwidth}
+    \subsection*{Procedimento}
+    \begin{enumerate}
+        \item Caricare nella colonna 2 ml di tampone OG Buffer, quello dell'LHC conterrà OGP, mentre quello della GFP non conterrà detergente. Lasciare che fluisca all'interno della resina facendo attenzione che la colonna non si svuoti del
+        tutto e la resina non si secchi. Sotto la colonna inseriamo un tubo di polipropilene, per raccogliere tutto ciò che faremo fluire attraverso il filtro
+        \item Fare lo stesso con i campioni
+        \item Ora caricare nuovamente 2 ml di OG buffer\\
+        quello che è contenuto nel tubo va ora buttato e il tubo sostituito da una eppendorf
+        \item Infine caricare 2 ml di buffer di eluizione
+        \item Nelle eppendorf sarà rimasta l'eluito, contenente le proteine.
+    \end{enumerate}
+\end{minipage}
+\newpage
+\subsection*{Conclusioni}
+Purtroppo per nessuna delle proteine si è avuto un risultato soddisfacente.\\
+\begin{center}
+    \includegraphics[width=0.35\textwidth]{gfp_bloccata.jpeg}\\
+    \emph{Filtro della GFP}
+\end{center}
+Nel caso specifico della GFP, la proteina è rimasta bloccata nel filtro. Sebbene sia sicuramente presente la proteina (perché abbiamo ottenuto un eluito giallo), ci sono stati problemi di legami alla resina (forse causati da proteasi che ha rimosso le code di istidina) o per troppi residui che hanno bloccato il filtro. Sarebbero necessarie ulteriori analisi per capire la motivazione.
+\begin{center}
+    \includegraphics[width=0.35\textwidth]{surnatante.jpeg}\\
+    \emph{Eluito dal filtro dell'LHC}
+\end{center}
+Per quanto riguarda la LHC molto probabilmente la proteina non ha foldato, quindi non essendo andato a buon fine l'esperimento precedente, non è stato visibile nulla in questo.
+\end{document} 
