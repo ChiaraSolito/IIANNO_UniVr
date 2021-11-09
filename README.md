@@ -2,7 +2,8 @@
 ##### Materiale utile per l'università.Progetti, dispense, ecc.
 ##### II ANNO della Laurea Triennale in Bioinformatica, Università di Verona
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\
 &emsp;&emsp;L **Sistemi Operativi e Reti**\
 &emsp;&emsp;&emsp;L Sistemi Operativi\
 &emsp;&emsp;&emsp;&emsp;L Progetto Bash\
